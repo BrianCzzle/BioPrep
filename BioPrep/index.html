@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Life Sciences Quiz</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#4CAF50">
+</head>
+
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header>
+      <h1>LIFE SCIENCES QUIZ</h1>
+      <div class="user-info">
+        <div>Welcome, Student!</div>
+        <div class="streak">
+          <i class="fas fa-fire"></i>
+          <span>3-day streak</span>
+        </div>
+      </div>
+    </header>
+
+    <section class="dashboard">
+      <div class="welcome-card">
+        <h2>Continue Your Learning</h2>
+        <p>You're making great progress in your Life Sciences studies. Keep it up!</p>
+
+        <div class="stats-grid">
+          <div class="stat-card">
+            <h3>72%</h3>
+            <p>Average Score</p>
+          </div>
+          <div class="stat-card">
+            <h3>42</h3>
+            <p>Quizzes Completed</p>
+          </div>
+          <div class="stat-card">
+            <h3>5</h3>
+            <p>Topics Mastered</p>
+          </div>
+          <div class="stat-card">
+            <h3>8</h3>
+            <p>Hours Studied</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="quick-actions">
+        <h3>Quick Actions</h3>
+        <button class="action-btn">
+          <i class="fas fa-bolt"></i> Quick Quiz (Random)
+        </button>
+        <button class="action-btn accent">
+          <i class="fas fa-book"></i> Study Glossary
+        </button>
+        <button class="action-btn">
+          <i class="fas fa-lightbulb"></i> Exam Tips
+        </button>
+      </div>
+    </section>
+
+
+    <!-- Home Content -->
+    <div class="home-content">
+      <!-- Terms Container -->
+      <div id="terms-container" class="terms-container">
+        <!-- TERM 1 -->
+        <div class="term-card">
+          <h3>TERM 1</h3>
+          <ul class="topic-list">
+            <li class="topic-item" data-topic="DNA">
+              <div class="topic-icon">
+                <i class="fas fa-dna"></i>
+              </div>
+              <span class="topic-name">DNA: Code of Life</span>
+              <span class="topic-progress">20/20</span>
+            </li>
+            <li class="topic-item" data-topic="Meiosis">
+              <div class="topic-icon">
+                <i class="fas fa-divide"></i>
+              </div>
+              <span class="topic-name">Meiosis</span>
+              <span class="topic-progress">20/20</span>
+            </li>
+            <li class="topic-item" data-topic="Reproduction">
+              <div class="topic-icon">
+                <i class="fas fa-fish"></i>
+              </div>
+              <span class="topic-name">Reproduction</span>
+              <span class="topic-progress">20/20</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- TERM 2 -->
+        <div class="term-card">
+          <h3>TERM 2</h3>
+          <ul class="topic-list">
+            <li class="topic-item" data-topic="Genetics">
+              <div class="topic-icon">
+                <i class="fas fa-dna"></i>
+              </div>
+              <span class="topic-name">Genetics & Inheritance</span>
+              <span class="topic-progress">20/20</span>
+            </li>
+            <li class="topic-item" data-topic="NervousSystem">
+              <div class="topic-icon">
+                <i class="fas fa-running"></i>
+              </div>
+              <span class="topic-name">Responding to the environment(humans)</span>
+              <span class="topic-progress">20/20</span>
+            </li>
+            <li class="topic-item" data-topic="EndocrineSystem">
+              <div class="topic-icon">
+                <i class="fas fa-heartbeat"></i>
+              </div>
+              <span class="topic-name">Endocrine System</span>
+              <span class="topic-progress">20/20</span>
+            </li>
+            <li class="topic-item" data-topic="Plants">
+              <div class="topic-icon">
+                <i class="fas fa-seedling"></i>
+              </div>
+              <span class="topic-name">Responding to the environment(plants)</span>
+              <span class="topic-progress">20/20</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- TERM 3 -->
+        <div class="term-card">
+          <h3>TERM 3</h3>
+          <ul class="topic-list">
+            <li class="topic-item" data-topic="Evolution">
+              <div class="topic-icon">
+                <i class="fas fa-dna"></i>
+              </div>
+              <span class="topic-name">Evolution</span>
+              <span class="topic-progress">20/20</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- TERM 4 -->
+        <div class="term-card">
+          <h3>TERM 4</h3>
+          <ul class="topic-list">
+            <li class="topic-item">
+              <div class="topic-icon">
+                <i class="fas fa-book"></i>
+              </div>
+              <span class="topic-name">Study Resources</span>
+            </li>
+            <li class="topic-item" onclick="openModal('tips-modal')">
+              <div class="topic-icon">
+                <i class="fas fa-lightbulb"></i>
+              </div>
+              <span class="topic-name">Study Tips</span>
+            </li>
+            <li class="topic-item" onclick="openModal('glossary-modal')">
+              <div class="topic-icon">
+                <i class="fas fa-book-open"></i>
+              </div>
+              <span class="topic-name">Glossary</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Quiz Type Modal -->
+      <div id="quiz-type-modal" class="modal hidden">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('quiz-type-modal')">&times;</span>
+          <h2>Choose Quiz Type</h2>
+          <button id="fill-blank-btn" class="action-btn">Fill in the Blank</button>
+          <button id="multiple-choice-btn" class="action-btn">Multiple Choice</button>
+
+        </div>
+      </div>
+
+      <!-- Quiz Page -->
+      <div id="quiz-page" class="hidden">
+        <div class="quiz-header">
+          <h2 id="quiz-title"></h2>
+          <div class="timer-container">
+            <p id="timer">Time Left: <span id="time">00:00</span></p>
+          </div>
+        </div>
+        <div class="progress-bar">
+          <div id="progress-fill"></div>
+        </div>
+        <div id="question-container">
+          <p id="question"></p>
+          <div id="options-container"></div>
+        </div>
+      </div>
+
+      <!-- Results Page -->
+      <div id="results-page" class="hidden">
+        <div class="results-header">
+          <h2>Quiz Results</h2>
+        </div>
+        <div class="score-display">
+          <p>Your score: <span id="score" class="score-value"></span></p>
+        </div>
+        <div class="results-actions">
+          <button id="retry-btn">Retry Quiz</button>
+          <button id="review-btn">Review Answers</button>
+          <button id="home-btn">Choose Another Topic</button>
+        </div>
+        <div id="review-container" class="review-container hidden"></div>
+      </div>
+
+      <!-- Study Tips Modal -->
+      <div id="tips-modal" class="modal hidden">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('tips-modal')">&times;</span>
+          <h3>Life Sciences Exam Hacks</h3>
+          <ul>
+            <li>Allocate your time: Spend about 1.2 minutes per mark.</li>
+            <li>Highlight keywords like "Describe", "Explain".</li>
+            <li>Start with easy questions first.</li>
+            <li>Use proper terminology for marks.</li>
+            <li>Label diagrams neatly.</li>
+            <li>Structure essays well: Intro, Body, Conclusion.</li>
+            <li>Don't leave blanks.</li>
+            <li>Check mark allocation as a guide.</li>
+            <li>Practice under timed conditions.</li>
+            <li>Use mnemonics for processes like meiosis.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Glossary Modal -->
+      <div id="glossary-modal" class="modal hidden">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('glossary-modal')">&times;</span>
+          <h3>Life Sciences Glossary</h3>
+          <div class="search-container">
+            <input type="text" id="glossary-search" placeholder="Search glossary terms...">
+          </div>
+          <div class="glossary-list">
+            <ul id="glossary-items">
+              <li class="glossary-item">
+                <div class="glossary-term">Abscisic acid:</div>
+                <div class="glossary-definition">The plant growth hormone that promotes seed dormancy.</div>
+              </li>
+              <li class="glossary-item">
+                <div class="glossary-term">Accommodation:</div>
+                <div class="glossary-definition">The series of changes that take place in the shape of the lens and the
+                  eye-ball in response to the distance of an object from the eye.</div>
+              </li>
+              <li class="glossary-item">
+                <div class="glossary-term">Aldosterone:</div>
+                <div class="glossary-definition">A hormone that regulates the salt concentration in human blood.</div>
+              </li>
+              <li class="glossary-item">
+                <div class="glossary-term">Allantois:</div>
+                <div class="glossary-definition">The structure in the amniotic egg that stores wastes.</div>
+              </li>
+              <li class="glossary-item">
+                <div class="glossary-term">Altricial development:</div>
+                <div class="glossary-definition">The reproductive strategy in which hatchlings of birds are not able to
+                  move and feed themselves.</div>
+              </li>
+              <li class="glossary-item">
+                <div class="glossary-term">Aqueous humour:</div>
+                <div class="glossary-definition">The watery fluid that supports the cornea and the front chamber of the
+                  eye.</div>
+              </li>
+              <li class="glossary-item">
+                <div class="glossary-term">Autonomic nervous system:</div>
+                <div class="glossary-definition">The part of the peripheral nervous system that controls involuntary
+                  action.</div>
+              </li>
+              <li class="glossary-item">
+                <div class="glossary-term">Biodiversity:</div>
+                <div class="glossary-definition">The variety of plant and animal species on earth.</div>
+              </li>
+              <li class="glossary-item">
+                <div class="glossary-term">Carbon footprint:</div>
+                <div class="glossary-definition">Measurement of the total amount of carbon dioxide emissions of an
+                  individual per year.</div>
+              </li>
+              <li class="glossary-item">
+                <div class="glossary-term">Centrosome:</div>
+                <div class="glossary-definition">Organelle found only in animal cells that forms the spindle during cell
+                  division.</div>
+              </li>
+              <!-- More glossary items would be here -->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 💬 CzzleBot Floating Chat -->
+<link rel="stylesheet" href="czzlebot/czzlebot.css" />
+
+<div class="chatbot-container" id="chatbot-container">
+  <div class="chat-header">
+    <h3>🤖 CzzleBot</h3>
+    <button id="close-chat">&times;</button>
+  </div>
+  <div class="chat-box" id="chat-box"></div>
+  <div class="chat-input">
+    <input type="text" id="user-input" placeholder="Ask me about Life Sciences..." />
+    <button id="send-btn">Send</button>
+  </div>
+</div>
+
+<!-- Floating Button -->
+<button class="chat-toggle" id="chat-toggle"><i class="fa-solid fa-robot"></i></button>
+
+<script src="czzlebot/czzlebot.js"></script>
+
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 Life Sciences Quiz App</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
