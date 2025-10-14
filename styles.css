@@ -171,6 +171,47 @@ header h1 {
   background-color: #f57c00;
 }
 
+.quick-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: 1.5rem 0;
+  flex-wrap: wrap; /* helps for smaller screens */
+}
+
+.qa-card {
+  flex: 1;
+  min-width: 150px;
+  background: #f8fafc;
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.qa-card:hover {
+  background: #e3fcec;
+  border-color: #1417e4;
+  transform: translateY(-5px);
+}
+
+.qa-card span {
+  font-size: 2rem;
+}
+
+.qa-card h3 {
+  color: #14532d;
+  margin-top: 0.5rem;
+}
+
+.qa-card p {
+  font-size: 0.9rem;
+  color: #475569;
+}
+
+
 /* ===== TERMS SECTION MOBILE FIXES ===== */
 .terms-section h2 {
   margin-bottom: 15px;

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,7 +18,7 @@
     <header>
       <h1>BioPrep</h1>
       <div class="user-info">
-        <div>Welcome, Student!</div>
+        <div>Welcome, learner!</div>
         <div class="streak">
           <i class="fas fa-fire"></i>
           <span>3-day streak</span>
@@ -51,19 +52,23 @@
       </div>
 
       <div class="quick-actions">
-        <h3>Quick Actions</h3>
-        <button class="action-btn">
-          <i class="fas fa-bolt"></i> Quick Quiz (Random)
-        </button>
-        <button class="action-btn accent">
-          <li class="topic-item" onclick="openModal('glossary-modal')">
-              <span class="topic-name"><i class="fas fa-book"></i>Study Glossary</span>
-            </li>
-        </button>
-        <button class="action-btn">
-          <i class="fas fa-lightbulb"></i>Exam Tips
-        </button>
+        <div class="qa-card">
+          <span>🎯</span>
+          <h3>Start Study Mode</h3>
+          <p>Focus, track time, and study smarter.</p>
+        </div>
+        <div class="qa-card">
+          <span>🤖</span>
+          <h3>Ask CzzleBot</h3>
+          <p>Get help from your AI study assistant.</p>
+        </div>
+        <div class="qa-card">
+          <span>🧩</span>
+          <h3>Quick Quiz</h3>
+          <p>Challenge yourself with random questions.</p>
+        </div>
       </div>
+
     </section>
 
 
@@ -294,7 +299,9 @@
                 <div class="glossary-definition">Organelle found only in animal cells that forms the spindle during cell
                   division.</div>
               </li>
-              <!-- More glossary items would be here -->
+              <li class="glossary-item">
+                <div class="glossary-term"></div>
+              </li>
             </ul>
           </div>
         </div>
@@ -302,24 +309,24 @@
     </div>
 
     <!-- 💬 CzzleBot Floating Chat -->
-<link rel="stylesheet" href="czzlebot/czzlebot.css" />
+    <link rel="stylesheet" href="czzlebot/czzlebot.css" />
 
-<div class="chatbot-container" id="chatbot-container">
-  <div class="chat-header">
-    <h3>🤖 CzzleBot</h3>
-    <button id="close-chat">&times;</button>
-  </div>
-  <div class="chat-box" id="chat-box"></div>
-  <div class="chat-input">
-    <input type="text" id="user-input" placeholder="Ask me about Life Sciences..." />
-    <button id="send-btn">Send</button>
-  </div>
-</div>
+    <div class="chatbot-container" id="chatbot-container">
+      <div class="chat-header">
+        <h3>🤖 CzzleBot</h3>
+        <button id="close-chat">&times;</button>
+      </div>
+      <div class="chat-box" id="chat-box"></div>
+      <div class="chat-input">
+        <input type="text" id="user-input" placeholder="Ask me about Life Sciences..." />
+        <button id="send-btn">Send</button>
+      </div>
+    </div>
 
-<!-- Floating Button -->
-<button class="chat-toggle" id="chat-toggle"><i class="fa-solid fa-robot"></i></button>
+    <!-- Floating Button -->
+    <button class="chat-toggle" id="chat-toggle"><i class="fa-solid fa-robot"></i></button>
 
-<script src="czzlebot/czzlebot.js"></script>
+    <script src="czzlebot/czzlebot.js"></script>
 
 
     <!-- Footer -->
@@ -330,4 +337,5 @@
 
   <script src="script.js"></script>
 </body>
+
 </html>

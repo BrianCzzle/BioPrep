@@ -1560,3 +1560,19 @@ const fillInBlankQuestions = {
         .then(() => console.log("✅ Service Worker Registered"))
         .catch(err => console.log("SW registration failed:", err));
     }
+document.querySelectorAll(".qa-card").forEach(card => {
+  card.addEventListener("click", () => {
+    const action = card.querySelector("h3").textContent;
+    switch (action) {
+      case "Start Study Mode":
+        alert("Study Mode coming soon 🔥");
+        break;
+      case "Ask CzzleBot":
+        document.getElementById("chat-toggle").click(); // opens chatbot
+        break;
+      case "Quick Quiz":
+        alert("Quick Quiz feature loading ⚡");
+        break;
+    }
+  });
+});
