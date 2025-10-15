@@ -247,95 +247,57 @@
       <div id="glossary-modal" class="modal hidden">
         <div class="modal-content">
           <span class="close" onclick="closeModal('glossary-modal')">&times;</span>
-          <h3>Life Sciences Glossary</h3>
+
+          <div class="glossary-header">
+            <h3>Life Sciences Glossary</h3>
+            <div class="paper-toggle">
+              <button id="paper1Btn" class="active">Paper 1</button>
+              <button id="paper2Btn">Paper 2</button>
+            </div>
+          </div>
+
           <div class="search-container">
             <input type="text" id="glossary-search" placeholder="Search glossary terms...">
           </div>
+
           <div class="glossary-list">
             <ul id="glossary-items">
-              <li class="glossary-item">
-                <div class="glossary-term">Abscisic acid:</div>
-                <div class="glossary-definition">The plant growth hormone that promotes seed dormancy.</div>
-              </li>
-              <li class="glossary-item">
-                <div class="glossary-term">Accommodation:</div>
-                <div class="glossary-definition">The series of changes that take place in the shape of the lens and the
-                  eye-ball in response to the distance of an object from the eye.</div>
-              </li>
-              <li class="glossary-item">
-                <div class="glossary-term">Aldosterone:</div>
-                <div class="glossary-definition">A hormone that regulates the salt concentration in human blood.</div>
-              </li>
-              <li class="glossary-item">
-                <div class="glossary-term">Allantois:</div>
-                <div class="glossary-definition">The structure in the amniotic egg that stores wastes.</div>
-              </li>
-              <li class="glossary-item">
-                <div class="glossary-term">Altricial development:</div>
-                <div class="glossary-definition">The reproductive strategy in which hatchlings of birds are not able to
-                  move and feed themselves.</div>
-              </li>
-              <li class="glossary-item">
-                <div class="glossary-term">Aqueous humour:</div>
-                <div class="glossary-definition">The watery fluid that supports the cornea and the front chamber of the
-                  eye.</div>
-              </li>
-              <li class="glossary-item">
-                <div class="glossary-term">Autonomic nervous system:</div>
-                <div class="glossary-definition">The part of the peripheral nervous system that controls involuntary
-                  action.</div>
-              </li>
-              <li class="glossary-item">
-                <div class="glossary-term">Biodiversity:</div>
-                <div class="glossary-definition">The variety of plant and animal species on earth.</div>
-              </li>
-              <li class="glossary-item">
-                <div class="glossary-term">Carbon footprint:</div>
-                <div class="glossary-definition">Measurement of the total amount of carbon dioxide emissions of an
-                  individual per year.</div>
-              </li>
-              <li class="glossary-item">
-                <div class="glossary-term">Centrosome:</div>
-                <div class="glossary-definition">Organelle found only in animal cells that forms the spindle during cell
-                  division.</div>
-              </li>
-              <li class="glossary-item">
-                <div class="glossary-term"></div>
-              </li>
+              <!-- Terms will be inserted dynamically -->
             </ul>
           </div>
         </div>
       </div>
+
+
+      <!-- 💬 CzzleBot Floating Chat -->
+      <link rel="stylesheet" href="czzlebot/czzlebot.css" />
+
+      <div class="chatbot-container" id="chatbot-container">
+        <div class="chat-header">
+          <h3>🤖 CzzleBot</h3>
+          <button id="close-chat">&times;</button>
+        </div>
+        <div class="chat-box" id="chat-box"></div>
+        <div class="chat-input">
+          <input type="text" id="user-input" placeholder="Ask me about Life Sciences..." />
+          <button id="send-btn">Send</button>
+        </div>
+      </div>
+
+      <!-- Floating Button -->
+      <button class="chat-toggle" id="chat-toggle"><i class="fa-solid fa-robot"></i></button>
+
+      <script src="czzlebot/czzlebot.js"></script>
+
+
+      <!-- Footer -->
+      <footer>
+        <p>&copy; 2025 Life Sciences Quiz App</p>
+      </footer>
     </div>
 
-    <!-- 💬 CzzleBot Floating Chat -->
-    <link rel="stylesheet" href="czzlebot/czzlebot.css" />
-
-    <div class="chatbot-container" id="chatbot-container">
-      <div class="chat-header">
-        <h3>🤖 CzzleBot</h3>
-        <button id="close-chat">&times;</button>
-      </div>
-      <div class="chat-box" id="chat-box"></div>
-      <div class="chat-input">
-        <input type="text" id="user-input" placeholder="Ask me about Life Sciences..." />
-        <button id="send-btn">Send</button>
-      </div>
-    </div>
-
-    <!-- Floating Button -->
-    <button class="chat-toggle" id="chat-toggle"><i class="fa-solid fa-robot"></i></button>
-
-    <script src="czzlebot/czzlebot.js"></script>
-
-
-    <!-- Footer -->
-    <footer>
-      <p>&copy; 2025 Life Sciences Quiz App</p>
-    </footer>
-  </div>
-
-  <script src="script.js"></script>
+    <script src="glossaryData.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
