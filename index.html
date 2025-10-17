@@ -291,10 +291,20 @@
 
 
       <!-- Footer -->
-      <footer>
-        <p>&copy; 2025 Life Sciences Quiz App</p>
-      </footer>
     </div>
+    <footer style="background:#70bb3e;color:#fff;text-align:center;padding:1.5rem 0;margin-top:2rem;">
+        <span>&copy; 2025 BioPrep</span> | <span id="appVersion">Loading version...</span>
+    </footer>
+    <script>
+        fetch('version.json')
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('appVersion').textContent = `Version ${data.version}`;
+            })
+            .catch(() => {
+                document.getElementById('appVersion').textContent = '';
+            });
+    </script>
 
     <script src="glossaryData.js"></script>
     <script src="script.js"></script>
