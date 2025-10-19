@@ -1,4 +1,3 @@
-
 // DOM Elements
 const termsContainer = document.getElementById("terms-container");
 const quizTypeModal = document.getElementById("quiz-type-modal");

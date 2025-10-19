@@ -400,225 +400,162 @@ const questions = {
 },
   ],
   Reproduction: [
-    {
-      type: "multiple-choice",
-      question: "Where does fertilization typically occur in humans?",
-      options: ["Uterus", "Ovary", "Fallopian tube", "Vagina"],
-      answer: "Fallopian tube",
-    },
-    {
-      type: "multiple-choice",
-      question: "Which hormone maintains the uterine lining during pregnancy?",
-      options: ["Oestrogen", "Progesterone", "FSH", "LH"],
-      answer: "Progesterone",
-    },
-    {
-      type: "multiple-choice",
-      question: "What is the process of sperm production called?",
-      options: ["Oogenesis", "Spermatogenesis", "Ovulation", "Fertilisation"],
-      answer: "Spermatogenesis",
-    },
-    {
-      type: "multiple-choice",
-      question: "The release of an ovum from the ovary is called...",
-      options: ["Implantation", "Ovulation", "Gestation", "Fertilisation"],
-      answer: "Ovulation",
-    },
-    {
-      type: "multiple-choice",
-      question: "Which structure connects the fetus to the placenta?",
-      options: ["Umbilical cord", "Chorion", "Amnion", "Cervix"],
-      answer: "Umbilical cord",
-    },
-    {
-      type: "multiple-choice",
-      question: "What is the term for the period from fertilization to birth?",
-      options: ["Ovulation", "Gestation", "Implantation", "Menstruation"],
-      answer: "Gestation",
-    },
-    {
-      type: "multiple-choice",
-      question: "Which hormone stimulates ovulation?",
-      options: ["FSH", "LH", "Progesterone", "Oestrogen"],
-      answer: "LH",
-    },
-    {
-      type: "multiple-choice",
-      question: "Where does implantation occur?",
-      options: ["Ovary", "Fallopian tube", "Uterus", "Cervix"],
-      answer: "Uterus",
-    },
-    {
-      type: "multiple-choice",
-      question: "Which structure produces testosterone?",
-      options: [
-        "Seminal vesicles",
-        "Prostate gland",
-        "Testes",
-        "Pituitary gland",
-      ],
-      answer: "Testes",
-    },
-    {
-      type: "multiple-choice",
-      question:
-        "The fluid protecting the fetus from mechanical shock is called...",
-      options: [
-        "Amniotic fluid",
-        "Placental fluid",
-        "Chorionic fluid",
-        "Cervical mucus",
-      ],
-      answer: "Amniotic fluid",
-    },
-    {
-      type: "multiple-choice",
-      question:
-        "Which phase of the menstrual cycle involves thickening of the uterine lining?",
-      options: ["Follicular", "Luteal", "Proliferative", "Secretory"],
-      answer: "Proliferative",
-    },
-    {
-      type: "multiple-choice",
-      question: "What triggers menstruation?",
-      options: [
-        "A rise in oestrogen",
-        "A drop in progesterone and oestrogen",
-        "A surge in FSH",
-        "Implantation of the embryo",
-      ],
-      answer: "A drop in progesterone and oestrogen",
-    },
-    {
-      type: "multiple-choice",
-      question: "Which contraceptive method prevents ovulation?",
-      options: ["Condom", "IUD", "Oral contraceptive pill", "Vasectomy"],
-      answer: "Oral contraceptive pill",
-    },
-    {
-      type: "multiple-choice",
-      question: "What is the function of the acrosome in sperm?",
-      options: [
-        "Provide energy",
-        "Penetrate the egg’s membrane",
-        "Protect the sperm",
-        "Produce testosterone",
-      ],
-      answer: "Penetrate the egg’s membrane",
-    },
-    {
-      type: "multiple-choice",
-      question: "Down syndrome is caused by...",
-      options: [
-        "Non-disjunction of chromosome 21",
-        "Excess progesterone",
-        "A bacterial infection",
-        "Low oestrogen",
-      ],
-      answer: "Non-disjunction of chromosome 21",
-    },
-    {
-      type: "multiple-choice",
-      question: "Which hormone stimulates the development of the follicle?",
-      options: ["FSH", "LH", "Progesterone", "Oestrogen"],
-      answer: "FSH",
-    },
-    {
-      type: "multiple-choice",
-      question:
-        "The structure formed after the follicle releases the ovum is the...",
-      options: ["Corpus luteum", "Placenta", "Zygote", "Blastocyst"],
-      answer: "Corpus luteum",
-    },
-    {
-      type: "multiple-choice",
-      question: "Which hormone is secreted by the corpus luteum?",
-      options: ["FSH", "LH", "Progesterone", "Oestrogen"],
-      answer: "Progesterone",
-    },
-    {
-      type: "multiple-choice",
-      question: "The process of cell division in the zygote is called...",
-      options: ["Meiosis", "Mitosis", "Fertilisation", "Implantation"],
-      answer: "Mitosis",
-    },
-    {
-      type: "multiple-choice",
-      question: "The hormone responsible for milk ejection is...",
-      options: ["Prolactin", "Oxytocin", "Oestrogen", "Progesterone"],
-      answer: "Oxytocin",
-    },
-    {
-      type: "multiple-choice",
-      question:
-        "The hormone that stimulates the development of secondary sexual characteristics in females is...",
-      options: ["Progesterone", "Oestrogen", "FSH", "LH"],
-      answer: "Oestrogen",
-    },
-    {
-      type: "multiple-choice",
-      question: "The structure that produces oestrogen in females is the...",
-      options: ["Ovary", "Pituitary gland", "Corpus luteum", "Placenta"],
-      answer: "Ovary",
-    },
-    {
-      type: "multiple-choice",
-      question:
-        "The hormone that stimulates the growth of the endometrium is...",
-      options: ["Progesterone", "Oestrogen", "FSH", "LH"],
-      answer: "Oestrogen",
-    },
-    {
-      type: "multiple-choice",
-      question: "The hormone that prepares the uterus for pregnancy is...",
-      options: ["Progesterone", "Oestrogen", "FSH", "LH"],
-      answer: "Progesterone",
-    },
-    {
-      type: "multiple-choice",
-      question: "The hormone that stimulates the production of sperm is...",
-      options: ["FSH", "LH", "Testosterone", "Progesterone"],
-      answer: "FSH",
-    },
-    {
-      type: "multiple-choice",
-      question:
-        "The hormone that stimulates the production of testosterone is...",
-      options: ["FSH", "LH", "Progesterone", "Oestrogen"],
-      answer: "LH",
-    },
-    {
-      type: "multiple-choice",
-      question:
-        "The hormone that triggers the release of an egg from the ovary is...",
-      options: ["FSH", "LH", "Progesterone", "Oestrogen"],
-      answer: "LH",
-    },
-    {
-      type: "multiple-choice",
-      question:
-        "The hormone that stimulates the development of the follicle is...",
-      options: ["FSH", "LH", "Progesterone", "Oestrogen"],
-      answer: "FSH",
-    },
-    {
-      type: "multiple-choice",
-      question: "The hormone that maintains the corpus luteum is...",
-      options: ["FSH", "LH", "Progesterone", "Oestrogen"],
-      answer: "LH",
-    },
-    {
-      type: "multiple-choice",
-      question: "The hormone that stimulates milk production is...",
-      options: ["Prolactin", "Oxytocin", "Oestrogen", "Progesterone"],
-      answer: "Prolactin",
-    },
-    {
-      type: "multiple-choice",
-      question: "The hormone that stimulates milk ejection is...",
-      options: ["Prolactin", "Oxytocin", "Oestrogen", "Progesterone"],
-      answer: "Oxytocin",
-    },
+  {
+    type: "multiple-choice",
+    question: "A reproductive strategy where the young receives nutrients through the placenta is called...",
+    options: ["Oviparous", "Viviparous", "Ovoviviparous", "Asexual"],
+    answer: "Viviparous",
+  },
+  {
+    type: "multiple-choice",
+    question: "The duct that transports semen and urine to the outside of the body is the...",
+    options: ["Vas deferens", "Urethra", "Ejaculatory duct", "Epididymis"],
+    answer: "Urethra",
+  },
+  {
+    type: "multiple-choice",
+    question: "The structure that serves as a micro-filter during pregnancy is the...",
+    options: ["Amnion", "Placenta", "Chorion", "Umbilical cord"],
+    answer: "Placenta",
+  },
+  {
+    type: "multiple-choice",
+    question: "The part of the male reproductive system which temporarily stores sperm until they mature is the...",
+    options: ["Testis", "Prostate", "Epididymis", "Seminal vesicle"],
+    answer: "Epididymis",
+  },
+  {
+    type: "multiple-choice",
+    question: "The fusion of the sperm and egg outside the body is called...",
+    options: ["External fertilisation", "Internal fertilisation", "Ovulation", "Implantation"],
+    answer: "External fertilisation",
+  },
+  {
+    type: "multiple-choice",
+    question: "The development of the embryo inside an incubated egg that is laid is called...",
+    options: ["Viviparous development", "Oviparous development", "Ovoviviparous development", "Metamorphosis"],
+    answer: "Oviparous development",
+  },
+  {
+    type: "multiple-choice",
+    question: "The development of the embryo in the uterus and the young are born alive is known as...",
+    options: ["Oviparous", "Viviparous", "Ovoviviparous", "Parthenogenesis"],
+    answer: "Viviparous",
+  },
+  {
+    type: "multiple-choice",
+    question: "The structure in the sperm cell that contains enzymes used to penetrate the ovum is the...",
+    options: ["Acrosome", "Mitochondrion", "Nucleus", "Flagellum"],
+    answer: "Acrosome",
+  },
+  {
+    type: "multiple-choice",
+    question: "The hollow ball of cells formed in early development is called a...",
+    options: ["Morula", "Blastocyst", "Gastrula", "Zygote"],
+    answer: "Blastocyst",
+  },
+  {
+    type: "multiple-choice",
+    question: "The lining of the uterus which is richly supplied with blood vessels is the...",
+    options: ["Perimetrium", "Myometrium", "Endometrium", "Serosa"],
+    answer: "Endometrium",
+  },
+  {
+    type: "multiple-choice",
+    question: "The part of the female reproductive system in which fertilisation normally takes place is the...",
+    options: ["Vagina", "Uterus", "Cervix", "Fallopian tube"],
+    answer: "Fallopian tube",
+  },
+  {
+    type: "multiple-choice",
+    question: "The hormone produced by the pituitary gland that stimulates growth of the Graafian follicle is...",
+    options: ["LH", "FSH", "Progesterone", "Oestrogen"],
+    answer: "FSH",
+  },
+  {
+    type: "multiple-choice",
+    question: "The layer within the ovary where ova are formed is the ovarian...",
+    options: ["Medulla", "Cortex", "Follicle", "Stroma"],
+    answer: "Cortex",
+  },
+  {
+    type: "multiple-choice",
+    question: "The hormone which converts the ruptured follicle into a corpus luteum is...",
+    options: ["FSH", "LH", "Progesterone", "Oestrogen"],
+    answer: "LH",
+  },
+  {
+    type: "multiple-choice",
+    question: "The type of cell division by which sperms are produced is...",
+    options: ["Mitosis", "Meiosis", "Binary fission", "Budding"],
+    answer: "Meiosis",
+  },
+  {
+    type: "multiple-choice",
+    question: "The hormone that maintains pregnancy (produced by the corpus luteum and placenta) is...",
+    options: ["Oestrogen", "Testosterone", "Progesterone", "Prolactin"],
+    answer: "Progesterone",
+  },
+  {
+    type: "multiple-choice",
+    question: "The gland in the brain that secretes FSH and LH is the...",
+    options: ["Pineal gland", "Pituitary gland", "Hypothalamus", "Thyroid gland"],
+    answer: "Pituitary gland",
+  },
+  {
+    type: "multiple-choice",
+    question: "The structure formed from part foetal and part maternal tissue responsible for gas exchange and nutrition is the...",
+    options: ["Amnion", "Placenta", "Chorion", "Allantois"],
+    answer: "Placenta",
+  },
+  {
+    type: "multiple-choice",
+    question: "The hormone responsible for secondary sexual characteristics in males is...",
+    options: ["Oestrogen", "Progesterone", "Testosterone", "FSH"],
+    answer: "Testosterone",
+  },
+  {
+    type: "multiple-choice",
+    question: "The blood vessel that carries nitrogenous waste from the foetus to the placenta is the...",
+    options: ["Umbilical vein", "Umbilical artery", "Ductus venosus", "Yolk sac vessel"],
+    answer: "Umbilical artery",
+  },
+  {
+    type: "multiple-choice",
+    question: "The blood vessel that carries oxygenated blood from the placenta to the foetus is the...",
+    options: ["Umbilical artery", "Umbilical vein", "Aorta", "Pulmonary vein"],
+    answer: "Umbilical vein",
+  },
+  {
+    type: "multiple-choice",
+    question: "A gland that lubricates the tip of the penis (Cowper's gland) is also called the...",
+    options: ["Bulbourethral gland", "Prostate gland", "Seminal vesicle", "Epididymal gland"],
+    answer: "Bulbourethral gland",
+  },
+  {
+    type: "multiple-choice",
+    question: "The common tube for the passage of urine and semen is the...",
+    options: ["Vas deferens", "Ejaculatory duct", "Urethra", "Vagina"],
+    answer: "Urethra",
+  },
+  {
+    type: "multiple-choice",
+    question: "A gland that produces an alkaline medium of semen is the...",
+    options: ["Seminal vesicle", "Cowper's gland", "Prostate gland", "Bulbourethral gland"],
+    answer: "Prostate gland",
+  },
+  {
+    type: "multiple-choice",
+    question: "The type of development in birds in which the young are born fully developed and able to move and feed itself is...",
+    options: ["Altricial", "Precocial", "Ovoviviparous", "Metamorphic"],
+    answer: "Precocial",
+  },
+  {
+    type: "multiple-choice",
+    question: "The organ where testosterone is produced is the...",
+    options: ["Adrenal gland", "Ovary", "Testis", "Prostate"],
+    answer: "Testis",
+  }
   ],
   Genetics: [
     {
@@ -1729,47 +1666,140 @@ const fillInBlankQuestions = {
     },
   ],
   Reproduction: [
-    {
-      type: "fill-in-blank",
-      question: "The structure that connects the foetus to the placenta",
-      answer: "Umbilical cord",
-    },
-    {
-      type: "fill-in-blank",
-      question:
-        "The part of the nervous system that consists of sympathetic and parasympathetic sections",
-      answer: "Autonomic nervous system",
-    },
-    {
-      type: "fill-in-blank",
-      question:
-        "Receptors in the ear that detect changes in speed and direction of movement of the head",
-      answer: "Semicircular canals",
-    },
-    {
-      type: "fill-in-blank",
-      question: "The ossicle that transfers vibrations to the oval window",
-      answer: "Stapes",
-    },
-    {
-      type: "fill-in-blank",
-      question: "The growth reaction of a plant in response to gravity",
-      answer: "Gravitropism",
-    },
-    {
-      type: "fill-in-blank",
-      question: "The part in the inner ear where the organ of Corti is located",
-      answer: "Cochlea",
-    },
-    {
-      type: "fill-in-blank",
-      question: "A plant hormone that stimulates the germination of seeds",
-      answer: "Gibberellin",
-    },
-    {
-      type: "fill-in-blank",
-      question: "A structure in the head of a sperm cell that contains enzymes",
-      answer: "Acrosome",
-    },
-  ],
+  {
+    type: "fill-in-blank",
+    question: "The complete development of the embryo inside an egg in the female body is called __________.",
+    answer: "ovoviviparous development",
+  },
+  {
+    type: "fill-in-blank",
+    question: "The development of the embryo in which very little energy is used and parental care is required is called __________ development.",
+    answer: "altricial",
+  },
+  {
+    type: "fill-in-blank",
+    question: "The development of the embryo in which a lot of energy is used and the young are able to move directly after hatching is called __________ development.",
+    answer: "precocial",
+  },
+  {
+    type: "fill-in-blank",
+    question: "The structure that provides nutrition to the embryo in the amniotic egg is the __________.",
+    answer: "yolk sac",
+  },
+  {
+    type: "fill-in-blank",
+    question: "The fluid-filled bag around the embryo is the __________.",
+    answer: "amnion",
+  },
+  {
+    type: "fill-in-blank",
+    question: "The liquid that surrounds the human embryo is called the __________.",
+    answer: "amniotic fluid",
+  },
+  {
+    type: "fill-in-blank",
+    question: "The lining of the uterus which is richly supplied with blood vessels is the __________.",
+    answer: "endometrium",
+  },
+  {
+    type: "fill-in-blank",
+    question: "The name given to the embryo after it reaches 12 weeks is the __________.",
+    answer: "foetus",
+  },
+  {
+    type: "fill-in-blank",
+    question: "Another name for the period of pregnancy is __________.",
+    answer: "gestation",
+  },
+  {
+    type: "fill-in-blank",
+    question: "The process by which the embryo becomes attached to the uterine wall is called __________.",
+    answer: "implantation",
+  },
+  {
+    type: "fill-in-blank",
+    question: "The 28-day reproductive cycle in females involving changes in the ovary and uterus is called the __________.",
+    answer: "menstrual cycle",
+  },
+  {
+    type: "fill-in-blank",
+    question: "Tearing away of the endometrial lining of the uterus accompanied by loss of blood is called __________.",
+    answer: "menstruation",
+  },
+  {
+    type: "fill-in-blank",
+    question: "The cell division by which the zygote becomes multicellular is called __________.",
+    answer: "mitosis",
+  },
+  {
+    type: "fill-in-blank",
+    question: "Production of ova by meiosis is called __________.",
+    answer: "oogenesis",
+  },
+  {
+    type: "fill-in-blank",
+    question: "The process by which an ovum is released from the ovary in humans is called __________.",
+    answer: "ovulation",
+  },
+  {
+    type: "fill-in-blank",
+    question: "The stage when sexual maturity is reached in males and females is called __________.",
+    answer: "puberty",
+  },
+  {
+    type: "fill-in-blank",
+    question: "Production of spermatozoa by meiosis is called __________.",
+    answer: "spermatogenesis",
+  },
+  {
+    type: "fill-in-blank",
+    question: "A hollow rope-like tube which attaches the embryo to the placenta is the __________.",
+    answer: "umbilical cord",
+  },
+  {
+    type: "fill-in-blank",
+    question: "The sac-like structure that contains the testes is the __________.",
+    answer: "scrotum",
+  },
+  {
+    type: "fill-in-blank",
+    question: "A gland that provides nutrients for the sperms is the __________.",
+    answer: "seminal vesicle",
+  },
+  {
+    type: "fill-in-blank",
+    question: "A tube that transfers sperms to the urethra is the __________.",
+    answer: "vas deferens",
+  },
+  {
+    type: "fill-in-blank",
+    question: "Finger-like projections that develop from the outer membrane of an embryo after implantation are called __________.",
+    answer: "chorionic villi",
+  },
+  {
+    type: "fill-in-blank",
+    question: "The fluid that protects the developing foetus against mechanical injury is the __________.",
+    answer: "amniotic fluid",
+  },
+  {
+    type: "fill-in-blank",
+    question: "The organelles found in large quantities in the neck region of a sperm cell are the __________.",
+    answer: "mitochondria",
+  },
+  {
+    type: "fill-in-blank",
+    question: "A blood vessel that transports carbon dioxide from the foetus to the placenta is the __________.",
+    answer: "umbilical artery",
+  },
+  {
+    type: "fill-in-blank",
+    question: "The hormone produced by the pituitary gland that stimulates the secretion of milk after birth is __________.",
+    answer: "prolactin",
+  },
+  {
+    type: "fill-in-blank",
+    question: "The lower neck of the uterus that opens into the vagina is called the __________.",
+    answer: "cervix",
+  },
+]
 };
