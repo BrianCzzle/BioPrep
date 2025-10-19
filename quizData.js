@@ -1,561 +1,714 @@
 const questions = {
   DNA: [
     {
-  type: "multiple-choice",
-  question: "A tangled mass of threads found in a nucleus of cells that give rise to chromosomes is the...",
-  options: ["Chromatin network", "Nuclear envelope", "Chromatid", "Centromere"],
-  answer: "Chromatin network",
-},
-{
-  type: "multiple-choice",
-  question: "A string-like structure found in a nucleus of a dividing cell is a...",
-  options: ["Chromatin", "Chromosome", "Gene", "Spindle fibre"],
-  answer: "Chromosome",
-},
-{
-  type: "multiple-choice",
-  question: "What is the natural shape of DNA?",
-  options: ["Single strand", "Double helix", "Triple bond", "Branched chain"],
-  answer: "Double helix",
-},
-{
-  type: "multiple-choice",
-  question: "What are the structural components/building blocks/monomers of nucleic acids?",
-  options: ["Amino acids", "Fatty acids", "Nucleotides", "Monosaccharides"],
-  answer: "Nucleotides",
-},
-{
-  type: "multiple-choice",
-  question: "What is the weak bond between nitrogenous bases in a DNA molecule?",
-  options: ["Ionic bond", "Covalent bond", "Peptide bond", "Hydrogen bond"],
-  answer: "Hydrogen bond",
-},
-{
-  type: "multiple-choice",
-  question: "The process by which a DNA molecule makes identical copies of itself is called...",
-  options: ["Transcription", "Translation", "DNA replication", "Protein synthesis"],
-  answer: "DNA replication",
-},
-{
-  type: "multiple-choice",
-  question: "A segment of DNA/a chromosome that codes for a particular characteristic is a...",
-  options: ["Codon", "Gene", "Nucleotide", "Allele"],
-  answer: "Gene",
-},
-{
-  type: "multiple-choice",
-  question: "A sudden change in the sequence/order of nitrogenous bases of a nucleic acid is a...",
-  options: ["Transcription", "Replication", "Mutation", "Translation"],
-  answer: "Mutation",
-},
-{
-  type: "multiple-choice",
-  question: "Two chromosomes that carry the same set of genes are called...",
-  options: ["Homologous chromosomes", "Heterozygous chromosomes", "Sister chromatids", "Diploid chromosomes"],
-  answer: "Homologous chromosomes",
-},
-{
-  type: "multiple-choice",
-  question: "The complete set of chromosomes in the cell of an organism is its...",
-  options: ["Genotype", "Phenotype", "Genome", "Karyotype"],
-  answer: "Genome",
-},
-{
-  type: "multiple-choice",
-  question: "What is the type of sugar found in a DNA molecule?",
-  options: ["Ribose", "Glucose", "Deoxyribose", "Fructose"],
-  answer: "Deoxyribose",
-},
-{
-  type: "multiple-choice",
-  question: "What is the type of sugar found in an RNA molecule?",
-  options: ["Ribose", "Glucose", "Deoxyribose", "Fructose"],
-  answer: "Ribose",
-},
-{
-  type: "multiple-choice",
-  question: "Which nitrogenous base is found only in RNA molecules?",
-  options: ["Thymine", "Cytosine", "Adenine", "Uracil"],
-  answer: "Uracil",
-},
-{
-  type: "multiple-choice",
-  question: "The stage of protein synthesis during which mRNA forms from DNA is called...",
-  options: ["Translation", "Replication", "Transcription", "Elongation"],
-  answer: "Transcription",
-},
-{
-  type: "multiple-choice",
-  question: "Where in the cell does transcription occur?",
-  options: ["Cytoplasm", "Ribosome", "Nucleus", "Mitochondria"],
-  answer: "Nucleus",
-},
-{
-  type: "multiple-choice",
-  question: "Which molecule carries the coded message from the nucleus to the cytoplasm about the protein to be made?",
-  options: ["tRNA", "DNA", "rRNA", "mRNA"],
-  answer: "mRNA",
-},
-{
-  type: "multiple-choice",
-  question: "What is the organelle in the cytoplasm to which mRNA attaches?",
-  options: ["Nucleus", "Golgi Apparatus", "Ribosome", "Mitochondria"],
-  answer: "Ribosome",
-},
-{
-  type: "multiple-choice",
-  question: "The organelle in the cytoplasm which is the site of protein synthesis is the...",
-  options: ["Nucleus", "Golgi Apparatus", "Ribosome", "Mitochondria"],
-  answer: "Ribosome",
-},
-{
-  type: "multiple-choice",
-  question: "The stage of protein synthesis that takes place in the cytoplasm is called...",
-  options: ["Transcription", "Replication", "Translation", "Mutation"],
-  answer: "Translation",
-},
-{
-  type: "multiple-choice",
-  question: "A sequence of three consecutive bases in mRNA is called a...",
-  options: ["Anticodon", "Gene", "Triplet", "Codon"],
-  answer: "Codon",
-},
-{
-  type: "multiple-choice",
-  question: "A sequence of three consecutive bases on tRNA which complement the bases on the mRNA codon is called a(n)...",
-  options: ["Codon", "Anticodon", "Gene", "Triplet"],
-  answer: "Anticodon",
-},
-{
-  type: "multiple-choice",
-  question: "The type of nucleic acid that carries a specific amino acid is...",
-  options: ["mRNA", "DNA", "tRNA", "rRNA"],
-  answer: "tRNA",
-},
-{
-  type: "multiple-choice",
-  question: "The monomers which serve as building blocks for the synthesis of proteins are...",
-  options: ["Nucleotides", "Fatty acids", "Amino acids", "Monosaccharides"],
-  answer: "Amino acids",
-},
-{
-  type: "multiple-choice",
-  question: "The bond between amino acids of a protein is a...",
-  options: ["Hydrogen bond", "Glycosidic bond", "Peptide bond", "Ionic bond"],
-  answer: "Peptide bond",
-},
+      type: "multiple-choice",
+      question:
+        "A tangled mass of threads found in a nucleus of cells that give rise to chromosomes is the...",
+      options: [
+        "Chromatin network",
+        "Nuclear envelope",
+        "Chromatid",
+        "Centromere",
+      ],
+      answer: "Chromatin network",
+    },
+    {
+      type: "multiple-choice",
+      question:
+        "A string-like structure found in a nucleus of a dividing cell is a...",
+      options: ["Chromatin", "Chromosome", "Gene", "Spindle fibre"],
+      answer: "Chromosome",
+    },
+    {
+      type: "multiple-choice",
+      question: "What is the natural shape of DNA?",
+      options: [
+        "Single strand",
+        "Double helix",
+        "Triple bond",
+        "Branched chain",
+      ],
+      answer: "Double helix",
+    },
+    {
+      type: "multiple-choice",
+      question:
+        "What are the structural components/building blocks/monomers of nucleic acids?",
+      options: ["Amino acids", "Fatty acids", "Nucleotides", "Monosaccharides"],
+      answer: "Nucleotides",
+    },
+    {
+      type: "multiple-choice",
+      question:
+        "What is the weak bond between nitrogenous bases in a DNA molecule?",
+      options: ["Ionic bond", "Covalent bond", "Peptide bond", "Hydrogen bond"],
+      answer: "Hydrogen bond",
+    },
+    {
+      type: "multiple-choice",
+      question:
+        "The process by which a DNA molecule makes identical copies of itself is called...",
+      options: [
+        "Transcription",
+        "Translation",
+        "DNA replication",
+        "Protein synthesis",
+      ],
+      answer: "DNA replication",
+    },
+    {
+      type: "multiple-choice",
+      question:
+        "A segment of DNA/a chromosome that codes for a particular characteristic is a...",
+      options: ["Codon", "Gene", "Nucleotide", "Allele"],
+      answer: "Gene",
+    },
+    {
+      type: "multiple-choice",
+      question:
+        "A sudden change in the sequence/order of nitrogenous bases of a nucleic acid is a...",
+      options: ["Transcription", "Replication", "Mutation", "Translation"],
+      answer: "Mutation",
+    },
+    {
+      type: "multiple-choice",
+      question:
+        "Two chromosomes that carry the same set of genes are called...",
+      options: [
+        "Homologous chromosomes",
+        "Heterozygous chromosomes",
+        "Sister chromatids",
+        "Diploid chromosomes",
+      ],
+      answer: "Homologous chromosomes",
+    },
+    {
+      type: "multiple-choice",
+      question:
+        "The complete set of chromosomes in the cell of an organism is its...",
+      options: ["Genotype", "Phenotype", "Genome", "Karyotype"],
+      answer: "Genome",
+    },
+    {
+      type: "multiple-choice",
+      question: "What is the type of sugar found in a DNA molecule?",
+      options: ["Ribose", "Glucose", "Deoxyribose", "Fructose"],
+      answer: "Deoxyribose",
+    },
+    {
+      type: "multiple-choice",
+      question: "What is the type of sugar found in an RNA molecule?",
+      options: ["Ribose", "Glucose", "Deoxyribose", "Fructose"],
+      answer: "Ribose",
+    },
+    {
+      type: "multiple-choice",
+      question: "Which nitrogenous base is found only in RNA molecules?",
+      options: ["Thymine", "Cytosine", "Adenine", "Uracil"],
+      answer: "Uracil",
+    },
+    {
+      type: "multiple-choice",
+      question:
+        "The stage of protein synthesis during which mRNA forms from DNA is called...",
+      options: ["Translation", "Replication", "Transcription", "Elongation"],
+      answer: "Transcription",
+    },
+    {
+      type: "multiple-choice",
+      question: "Where in the cell does transcription occur?",
+      options: ["Cytoplasm", "Ribosome", "Nucleus", "Mitochondria"],
+      answer: "Nucleus",
+    },
+    {
+      type: "multiple-choice",
+      question:
+        "Which molecule carries the coded message from the nucleus to the cytoplasm about the protein to be made?",
+      options: ["tRNA", "DNA", "rRNA", "mRNA"],
+      answer: "mRNA",
+    },
+    {
+      type: "multiple-choice",
+      question:
+        "What is the organelle in the cytoplasm to which mRNA attaches?",
+      options: ["Nucleus", "Golgi Apparatus", "Ribosome", "Mitochondria"],
+      answer: "Ribosome",
+    },
+    {
+      type: "multiple-choice",
+      question:
+        "The organelle in the cytoplasm which is the site of protein synthesis is the...",
+      options: ["Nucleus", "Golgi Apparatus", "Ribosome", "Mitochondria"],
+      answer: "Ribosome",
+    },
+    {
+      type: "multiple-choice",
+      question:
+        "The stage of protein synthesis that takes place in the cytoplasm is called...",
+      options: ["Transcription", "Replication", "Translation", "Mutation"],
+      answer: "Translation",
+    },
+    {
+      type: "multiple-choice",
+      question: "A sequence of three consecutive bases in mRNA is called a...",
+      options: ["Anticodon", "Gene", "Triplet", "Codon"],
+      answer: "Codon",
+    },
+    {
+      type: "multiple-choice",
+      question:
+        "A sequence of three consecutive bases on tRNA which complement the bases on the mRNA codon is called a(n)...",
+      options: ["Codon", "Anticodon", "Gene", "Triplet"],
+      answer: "Anticodon",
+    },
+    {
+      type: "multiple-choice",
+      question:
+        "The type of nucleic acid that carries a specific amino acid is...",
+      options: ["mRNA", "DNA", "tRNA", "rRNA"],
+      answer: "tRNA",
+    },
+    {
+      type: "multiple-choice",
+      question:
+        "The monomers which serve as building blocks for the synthesis of proteins are...",
+      options: ["Nucleotides", "Fatty acids", "Amino acids", "Monosaccharides"],
+      answer: "Amino acids",
+    },
+    {
+      type: "multiple-choice",
+      question: "The bond between amino acids of a protein is a...",
+      options: [
+        "Hydrogen bond",
+        "Glycosidic bond",
+        "Peptide bond",
+        "Ionic bond",
+      ],
+      answer: "Peptide bond",
+    },
   ],
   Meiosis: [
     {
-  type: "multiple-choice",
-  question: "Organelle found only in animal cells that forms the spindle during cell division.",
-  options: ["Centrosome", "Centriole", "Centromere", "Chiasma"],
-  answer: "Centriole",
-},
-{
-  type: "multiple-choice",
-  question: "Structures formed when the centrosome divides into two which moves to opposite poles of the cell during cell division.",
-  options: ["Spindle fibres", "Centrioles", "Chromatids", "Centromeres"],
-  answer: "Centrioles",
-},
-{
-  type: "multiple-choice",
-  question: "The point where two chromatids overlap during crossing over.",
-  options: ["Centromere", "Centrosome", "Chiasma", "Spindle pole"],
-  answer: "Chiasma",
-},
-{
-  type: "multiple-choice",
-  question: "The division of the cytoplasm through the constriction of the cell membrane at the end of cell division.",
-  options: ["Karyokinesis", "Cytokinesis", "Mitosis", "Synapsis"],
-  answer: "Cytokinesis",
-},
-{
-  type: "multiple-choice",
-  question: "The failure of chromosome pairs to separate during meiosis.",
-  options: ["Crossing over", "Non-disjunction", "Replication", "Synapsis"],
-  answer: "Non-disjunction",
-},
-{
-  type: "multiple-choice",
-  question: "A representation of the number, shape and arrangement of all the chromosomes in the nucleus of a somatic cell.",
-  options: ["Genotype", "Phenotype", "Karyotype", "Genome"],
-  answer: "Karyotype",
-},
-{
-  type: "multiple-choice",
-  question: "Two arms of a chromosomes.",
-  options: ["Centromeres", "Chromatids", "Genes", "Alleles"],
-  answer: "Chromatids",
-},
-{
-  type: "multiple-choice",
-  question: "Two set of chromosomes.",
-  options: ["Haploid", "Diploid", "Polyploid", "Homologous"],
-  answer: "Diploid",
-},
-{
-  type: "multiple-choice",
-  question: "Pair of chromosomes that have same structural features.",
-  options: ["Sister chromatids", "Homologous chromosomes", "Sex chromosomes", "Autosomes"],
-  answer: "Homologous chromosomes",
-},
-{
-  type: "multiple-choice",
-  question: "Phase of cell division where DNA replication occurs.",
-  options: ["Prophase", "Metaphase", "Anaphase", "Interphase"],
-  answer: "Interphase",
-},
-{
-  type: "multiple-choice",
-  question: "None sex chromosomes in humans.",
-  options: ["Homologous chromosomes", "Autosomes", "Sex chromosomes", "Gametes"],
-  answer: "Autosomes",
-},
-{
-  type: "multiple-choice",
-  question: "The part of the plant where the male gametes are produced.",
-  options: ["Ovary", "Stigma", "Anther", "Pollen tube"],
-  answer: "Anther",
-},
-{
-  type: "multiple-choice",
-  question: "The structure that holds the two chromatids of a chromosome together.",
-  options: ["Centrosome", "Centriole", "Centromere", "Chiasma"],
-  answer: "Centromere",
-},
-{
-  type: "multiple-choice",
-  question: "The chromosome condition of a cell that has a single set of chromosomes.",
-  options: ["Diploid", "Haploid", "Triploid", "Polyploid"],
-  answer: "Haploid",
-},
-{
-  type: "multiple-choice",
-  question: "The phase of meiosis where paired chromosomes are arranged at the equator.",
-  options: ["Prophase I", "Metaphase I", "Anaphase I", "Telophase I"],
-  answer: "Metaphase I",
-},
-{
-  type: "multiple-choice",
-  question: "The division of the cytoplasm of a cell during a cell division.",
-  options: ["Karyokinesis", "Cytokinesis", "Mitosis", "Synapsis"],
-  answer: "Cytokinesis",
-},
-{
-  type: "multiple-choice",
-  question: "The structure formed by the centrioles during cell division.",
-  options: ["Spindle fibres", "Centromeres", "Centrioles", "Chromatids"],
-  answer: "Spindle fibres",
-},
-{
-  type: "multiple-choice",
-  question: "A genetic disorder caused by having an extra copy of chromosome number 21.",
-  options: ["Turner syndrome", "Klinefelter syndrome", "Down syndrome", "Hemophilia"],
-  answer: "Down syndrome",
-},
-{
-  type: "multiple-choice",
-  question: "The failure of chromosome pairs to separate during meiosis.",
-  options: ["Crossing over", "Non-disjunction", "Replication", "Synapsis"],
-  answer: "Non-disjunction",
-},
-{
-  type: "multiple-choice",
-  question: "The phase in the cell cycle during which the cell growth occurs to doubles the genetic material.",
-  options: ["Prophase", "Metaphase", "Anaphase", "Interphase"],
-  answer: "Interphase",
-},
-{
-  type: "multiple-choice",
-  question: "A threadlike structure made up of DNA and protein found in the nucleus of most living cells, carrying genetic information in the form of genes.",
-  options: ["Chromatid", "Chromosome", "Gene", "Centromere"],
-  answer: "Chromosome",
-},
-{
-  type: "multiple-choice",
-  question: "One of the two identical strands of a replicated chromosome.",
-  options: ["Chromatin", "Chromatid", "Centromere", "Gene"],
-  answer: "Chromatid",
-},
-{
-  type: "multiple-choice",
-  question: "Region where the two chromatids of a chromosome are held together.",
-  options: ["Centrosome", "Centriole", "Centromere", "Chiasma"],
-  answer: "Centromere",
-},
-{
-  type: "multiple-choice",
-  question: "A pair of chromosomes of the same shape, size and having similar genes for each characteristic occupying the same position.",
-  options: ["Sister chromatids", "Homologous chromosomes", "Sex chromosomes", "Autosomes"],
-  answer: "Homologous chromosomes",
-},
-{
-  type: "multiple-choice",
-  question: "A pair of homologous chromosomes which lie next to each other and are physically in contact with each other at a point where crossing over will occur.",
-  options: ["Bivalent", "Tetrad", "Synapsis", "Chiasma"],
-  answer: "Bivalent",
-},
-{
-  type: "multiple-choice",
-  question: "An unreplicated 'chromosome' has a single double-stranded DNA molecule.",
-  options: ["Chromatid", "Chromosome", "Gene", "Chromatin"],
-  answer: "Chromosome",
-},
-{
-  type: "multiple-choice",
-  question: "A replicated 'chromosome' has two identical double-stranded DNA molecules.",
-  options: ["Chromatids", "Chromosome", "Gene", "Chromatin"],
-  answer: "Chromatids",
-},
-{
-  type: "multiple-choice",
-  question: "The phase in the cell cycle when DNA replication occurs.",
-  options: ["Prophase", "Metaphase", "Anaphase", "Interphase"],
-  answer: "Interphase",
-},
-{
-  type: "multiple-choice",
-  question: "Two complete set of chromosomes in a cell.",
-  options: ["Haploid", "Diploid", "Triploid", "Polyploid"],
-  answer: "Diploid",
-},
-{
-  type: "multiple-choice",
-  question: "One complete sets of chromosomes in a cell.",
-  options: ["Haploid", "Diploid", "Triploid", "Polyploid"],
-  answer: "Haploid",
-},
-{
-  type: "multiple-choice",
-  question: "A segment of DNA in a chromosome that contains the code for a particular characteristic.",
-  options: ["Chromatid", "Chromosome", "Gene", "Centromere"],
-  answer: "Gene",
-},
-{
-  type: "multiple-choice",
-  question: "Organelle (containing two centrioles) found only in animal cells.",
-  options: ["Centrosome", "Centriole", "Centromere", "Chiasma"],
-  answer: "Centrosome",
-},
-{
-  type: "multiple-choice",
-  question: "Structures formed when the centrosome divides into two; they move to opposite ends of the cell during cell division.",
-  options: ["Spindle fibres", "Centrioles", "Chromatids", "Centromeres"],
-  answer: "Centrioles",
-},
-{
-  type: "multiple-choice",
-  question: "Overlapping of homologous chromosomes resulting in the exchange of genetic material during Prophase I.",
-  options: ["Non-disjunction", "Crossing over", "Cytokinesis", "Synapsis"],
-  answer: "Crossing over",
-},
-{
-  type: "multiple-choice",
-  question: "Point where two chromatids overlap during crossing over.",
-  options: ["Centromere", "Centrosome", "Chiasma", "Spindle pole"],
-  answer: "Chiasma",
-},
-{
-  type: "multiple-choice",
-  question: "A representation of the number, shape and arrangement of a full set of chromosomes in the nucleus of a somatic cell.",
-  options: ["Genotype", "Phenotype", "Karyotype", "Genome"],
-  answer: "Karyotype",
-},
-{
-  type: "multiple-choice",
-  question: "The first 22 pairs of chromosomes which control the appearance, structure and functioning of the body.",
-  options: ["Homologous chromosomes", "Autosomes", "Sex chromosomes", "Gametes"],
-  answer: "Autosomes",
-},
-{
-  type: "multiple-choice",
-  question: "The pair of chromosomes (XX or XY) responsible for sex determination.",
-  options: ["Homologous chromosomes", "Autosomes", "Sex chromosomes", "Gametes"],
-  answer: "Sex chromosomes",
-},
-{
-  type: "multiple-choice",
-  question: "Any cells in an organism excluding male and female gametes – they are diploid (have 2 sets of chromosomes) and are produced through mitosis.",
-  options: ["Gametes", "Somatic cells", "Zygotes", "Haploid cells"],
-  answer: "Somatic cells",
-},
-{
-  type: "multiple-choice",
-  question: "Specialized cells called gametes (sperm cell and egg cell). They have a haploid number of chromosomes and are produced through meiosis.",
-  options: ["Somatic cells", "Gametes", "Zygotes", "Diploid cells"],
-  answer: "Gametes",
-},
-{
-  type: "multiple-choice",
-  question: "The process of division of the nucleus of a cell.",
-  options: ["Cytokinesis", "Karyokinesis", "Mitosis", "Meiosis"],
-  answer: "Karyokinesis",
-},
-{
-  type: "multiple-choice",
-  question: "Is the process of division during which the cytoplasm of a single cell divides into two daughter cells.",
-  options: ["Cytokinesis", "Karyokinesis", "Mitosis", "Meiosis"],
-  answer: "Cytokinesis",
-},
+      type: "multiple-choice",
+      question:
+        "Organelle found only in animal cells that forms the spindle during cell division.",
+      options: ["Centrosome", "Centriole", "Centromere", "Chiasma"],
+      answer: "Centriole",
+    },
+    {
+      type: "multiple-choice",
+      question:
+        "Structures formed when the centrosome divides into two which moves to opposite poles of the cell during cell division.",
+      options: ["Spindle fibres", "Centrioles", "Chromatids", "Centromeres"],
+      answer: "Centrioles",
+    },
+    {
+      type: "multiple-choice",
+      question: "The point where two chromatids overlap during crossing over.",
+      options: ["Centromere", "Centrosome", "Chiasma", "Spindle pole"],
+      answer: "Chiasma",
+    },
+    {
+      type: "multiple-choice",
+      question:
+        "The division of the cytoplasm through the constriction of the cell membrane at the end of cell division.",
+      options: ["Karyokinesis", "Cytokinesis", "Mitosis", "Synapsis"],
+      answer: "Cytokinesis",
+    },
+    {
+      type: "multiple-choice",
+      question: "The failure of chromosome pairs to separate during meiosis.",
+      options: ["Crossing over", "Non-disjunction", "Replication", "Synapsis"],
+      answer: "Non-disjunction",
+    },
+    {
+      type: "multiple-choice",
+      question:
+        "A representation of the number, shape and arrangement of all the chromosomes in the nucleus of a somatic cell.",
+      options: ["Genotype", "Phenotype", "Karyotype", "Genome"],
+      answer: "Karyotype",
+    },
+    {
+      type: "multiple-choice",
+      question: "Two arms of a chromosomes.",
+      options: ["Centromeres", "Chromatids", "Genes", "Alleles"],
+      answer: "Chromatids",
+    },
+    {
+      type: "multiple-choice",
+      question: "Two set of chromosomes.",
+      options: ["Haploid", "Diploid", "Polyploid", "Homologous"],
+      answer: "Diploid",
+    },
+    {
+      type: "multiple-choice",
+      question: "Pair of chromosomes that have same structural features.",
+      options: [
+        "Sister chromatids",
+        "Homologous chromosomes",
+        "Sex chromosomes",
+        "Autosomes",
+      ],
+      answer: "Homologous chromosomes",
+    },
+    {
+      type: "multiple-choice",
+      question: "Phase of cell division where DNA replication occurs.",
+      options: ["Prophase", "Metaphase", "Anaphase", "Interphase"],
+      answer: "Interphase",
+    },
+    {
+      type: "multiple-choice",
+      question: "None sex chromosomes in humans.",
+      options: [
+        "Homologous chromosomes",
+        "Autosomes",
+        "Sex chromosomes",
+        "Gametes",
+      ],
+      answer: "Autosomes",
+    },
+    {
+      type: "multiple-choice",
+      question: "The part of the plant where the male gametes are produced.",
+      options: ["Ovary", "Stigma", "Anther", "Pollen tube"],
+      answer: "Anther",
+    },
+    {
+      type: "multiple-choice",
+      question:
+        "The structure that holds the two chromatids of a chromosome together.",
+      options: ["Centrosome", "Centriole", "Centromere", "Chiasma"],
+      answer: "Centromere",
+    },
+    {
+      type: "multiple-choice",
+      question:
+        "The chromosome condition of a cell that has a single set of chromosomes.",
+      options: ["Diploid", "Haploid", "Triploid", "Polyploid"],
+      answer: "Haploid",
+    },
+    {
+      type: "multiple-choice",
+      question:
+        "The phase of meiosis where paired chromosomes are arranged at the equator.",
+      options: ["Prophase I", "Metaphase I", "Anaphase I", "Telophase I"],
+      answer: "Metaphase I",
+    },
+    {
+      type: "multiple-choice",
+      question:
+        "The division of the cytoplasm of a cell during a cell division.",
+      options: ["Karyokinesis", "Cytokinesis", "Mitosis", "Synapsis"],
+      answer: "Cytokinesis",
+    },
+    {
+      type: "multiple-choice",
+      question: "The structure formed by the centrioles during cell division.",
+      options: ["Spindle fibres", "Centromeres", "Centrioles", "Chromatids"],
+      answer: "Spindle fibres",
+    },
+    {
+      type: "multiple-choice",
+      question:
+        "A genetic disorder caused by having an extra copy of chromosome number 21.",
+      options: [
+        "Turner syndrome",
+        "Klinefelter syndrome",
+        "Down syndrome",
+        "Hemophilia",
+      ],
+      answer: "Down syndrome",
+    },
+    {
+      type: "multiple-choice",
+      question: "The failure of chromosome pairs to separate during meiosis.",
+      options: ["Crossing over", "Non-disjunction", "Replication", "Synapsis"],
+      answer: "Non-disjunction",
+    },
+    {
+      type: "multiple-choice",
+      question:
+        "The phase in the cell cycle during which the cell growth occurs to doubles the genetic material.",
+      options: ["Prophase", "Metaphase", "Anaphase", "Interphase"],
+      answer: "Interphase",
+    },
+    {
+      type: "multiple-choice",
+      question:
+        "A threadlike structure made up of DNA and protein found in the nucleus of most living cells, carrying genetic information in the form of genes.",
+      options: ["Chromatid", "Chromosome", "Gene", "Centromere"],
+      answer: "Chromosome",
+    },
+    {
+      type: "multiple-choice",
+      question: "One of the two identical strands of a replicated chromosome.",
+      options: ["Chromatin", "Chromatid", "Centromere", "Gene"],
+      answer: "Chromatid",
+    },
+    {
+      type: "multiple-choice",
+      question:
+        "Region where the two chromatids of a chromosome are held together.",
+      options: ["Centrosome", "Centriole", "Centromere", "Chiasma"],
+      answer: "Centromere",
+    },
+    {
+      type: "multiple-choice",
+      question:
+        "A pair of chromosomes of the same shape, size and having similar genes for each characteristic occupying the same position.",
+      options: [
+        "Sister chromatids",
+        "Homologous chromosomes",
+        "Sex chromosomes",
+        "Autosomes",
+      ],
+      answer: "Homologous chromosomes",
+    },
+    {
+      type: "multiple-choice",
+      question:
+        "A pair of homologous chromosomes which lie next to each other and are physically in contact with each other at a point where crossing over will occur.",
+      options: ["Bivalent", "Tetrad", "Synapsis", "Chiasma"],
+      answer: "Bivalent",
+    },
+    {
+      type: "multiple-choice",
+      question:
+        "An unreplicated 'chromosome' has a single double-stranded DNA molecule.",
+      options: ["Chromatid", "Chromosome", "Gene", "Chromatin"],
+      answer: "Chromosome",
+    },
+    {
+      type: "multiple-choice",
+      question:
+        "A replicated 'chromosome' has two identical double-stranded DNA molecules.",
+      options: ["Chromatids", "Chromosome", "Gene", "Chromatin"],
+      answer: "Chromatids",
+    },
+    {
+      type: "multiple-choice",
+      question: "The phase in the cell cycle when DNA replication occurs.",
+      options: ["Prophase", "Metaphase", "Anaphase", "Interphase"],
+      answer: "Interphase",
+    },
+    {
+      type: "multiple-choice",
+      question: "Two complete set of chromosomes in a cell.",
+      options: ["Haploid", "Diploid", "Triploid", "Polyploid"],
+      answer: "Diploid",
+    },
+    {
+      type: "multiple-choice",
+      question: "One complete sets of chromosomes in a cell.",
+      options: ["Haploid", "Diploid", "Triploid", "Polyploid"],
+      answer: "Haploid",
+    },
+    {
+      type: "multiple-choice",
+      question:
+        "A segment of DNA in a chromosome that contains the code for a particular characteristic.",
+      options: ["Chromatid", "Chromosome", "Gene", "Centromere"],
+      answer: "Gene",
+    },
+    {
+      type: "multiple-choice",
+      question:
+        "Organelle (containing two centrioles) found only in animal cells.",
+      options: ["Centrosome", "Centriole", "Centromere", "Chiasma"],
+      answer: "Centrosome",
+    },
+    {
+      type: "multiple-choice",
+      question:
+        "Structures formed when the centrosome divides into two; they move to opposite ends of the cell during cell division.",
+      options: ["Spindle fibres", "Centrioles", "Chromatids", "Centromeres"],
+      answer: "Centrioles",
+    },
+    {
+      type: "multiple-choice",
+      question:
+        "Overlapping of homologous chromosomes resulting in the exchange of genetic material during Prophase I.",
+      options: ["Non-disjunction", "Crossing over", "Cytokinesis", "Synapsis"],
+      answer: "Crossing over",
+    },
+    {
+      type: "multiple-choice",
+      question: "Point where two chromatids overlap during crossing over.",
+      options: ["Centromere", "Centrosome", "Chiasma", "Spindle pole"],
+      answer: "Chiasma",
+    },
+    {
+      type: "multiple-choice",
+      question:
+        "A representation of the number, shape and arrangement of a full set of chromosomes in the nucleus of a somatic cell.",
+      options: ["Genotype", "Phenotype", "Karyotype", "Genome"],
+      answer: "Karyotype",
+    },
+    {
+      type: "multiple-choice",
+      question:
+        "The first 22 pairs of chromosomes which control the appearance, structure and functioning of the body.",
+      options: [
+        "Homologous chromosomes",
+        "Autosomes",
+        "Sex chromosomes",
+        "Gametes",
+      ],
+      answer: "Autosomes",
+    },
+    {
+      type: "multiple-choice",
+      question:
+        "The pair of chromosomes (XX or XY) responsible for sex determination.",
+      options: [
+        "Homologous chromosomes",
+        "Autosomes",
+        "Sex chromosomes",
+        "Gametes",
+      ],
+      answer: "Sex chromosomes",
+    },
+    {
+      type: "multiple-choice",
+      question:
+        "Any cells in an organism excluding male and female gametes – they are diploid (have 2 sets of chromosomes) and are produced through mitosis.",
+      options: ["Gametes", "Somatic cells", "Zygotes", "Haploid cells"],
+      answer: "Somatic cells",
+    },
+    {
+      type: "multiple-choice",
+      question:
+        "Specialized cells called gametes (sperm cell and egg cell). They have a haploid number of chromosomes and are produced through meiosis.",
+      options: ["Somatic cells", "Gametes", "Zygotes", "Diploid cells"],
+      answer: "Gametes",
+    },
+    {
+      type: "multiple-choice",
+      question: "The process of division of the nucleus of a cell.",
+      options: ["Cytokinesis", "Karyokinesis", "Mitosis", "Meiosis"],
+      answer: "Karyokinesis",
+    },
+    {
+      type: "multiple-choice",
+      question:
+        "Is the process of division during which the cytoplasm of a single cell divides into two daughter cells.",
+      options: ["Cytokinesis", "Karyokinesis", "Mitosis", "Meiosis"],
+      answer: "Cytokinesis",
+    },
   ],
   Reproduction: [
-  {
-    type: "multiple-choice",
-    question: "A reproductive strategy where the young receives nutrients through the placenta is called...",
-    options: ["Oviparous", "Viviparous", "Ovoviviparous", "Asexual"],
-    answer: "Viviparous",
-  },
-  {
-    type: "multiple-choice",
-    question: "The duct that transports semen and urine to the outside of the body is the...",
-    options: ["Vas deferens", "Urethra", "Ejaculatory duct", "Epididymis"],
-    answer: "Urethra",
-  },
-  {
-    type: "multiple-choice",
-    question: "The structure that serves as a micro-filter during pregnancy is the...",
-    options: ["Amnion", "Placenta", "Chorion", "Umbilical cord"],
-    answer: "Placenta",
-  },
-  {
-    type: "multiple-choice",
-    question: "The part of the male reproductive system which temporarily stores sperm until they mature is the...",
-    options: ["Testis", "Prostate", "Epididymis", "Seminal vesicle"],
-    answer: "Epididymis",
-  },
-  {
-    type: "multiple-choice",
-    question: "The fusion of the sperm and egg outside the body is called...",
-    options: ["External fertilisation", "Internal fertilisation", "Ovulation", "Implantation"],
-    answer: "External fertilisation",
-  },
-  {
-    type: "multiple-choice",
-    question: "The development of the embryo inside an incubated egg that is laid is called...",
-    options: ["Viviparous development", "Oviparous development", "Ovoviviparous development", "Metamorphosis"],
-    answer: "Oviparous development",
-  },
-  {
-    type: "multiple-choice",
-    question: "The development of the embryo in the uterus and the young are born alive is known as...",
-    options: ["Oviparous", "Viviparous", "Ovoviviparous", "Parthenogenesis"],
-    answer: "Viviparous",
-  },
-  {
-    type: "multiple-choice",
-    question: "The structure in the sperm cell that contains enzymes used to penetrate the ovum is the...",
-    options: ["Acrosome", "Mitochondrion", "Nucleus", "Flagellum"],
-    answer: "Acrosome",
-  },
-  {
-    type: "multiple-choice",
-    question: "The hollow ball of cells formed in early development is called a...",
-    options: ["Morula", "Blastocyst", "Gastrula", "Zygote"],
-    answer: "Blastocyst",
-  },
-  {
-    type: "multiple-choice",
-    question: "The lining of the uterus which is richly supplied with blood vessels is the...",
-    options: ["Perimetrium", "Myometrium", "Endometrium", "Serosa"],
-    answer: "Endometrium",
-  },
-  {
-    type: "multiple-choice",
-    question: "The part of the female reproductive system in which fertilisation normally takes place is the...",
-    options: ["Vagina", "Uterus", "Cervix", "Fallopian tube"],
-    answer: "Fallopian tube",
-  },
-  {
-    type: "multiple-choice",
-    question: "The hormone produced by the pituitary gland that stimulates growth of the Graafian follicle is...",
-    options: ["LH", "FSH", "Progesterone", "Oestrogen"],
-    answer: "FSH",
-  },
-  {
-    type: "multiple-choice",
-    question: "The layer within the ovary where ova are formed is the ovarian...",
-    options: ["Medulla", "Cortex", "Follicle", "Stroma"],
-    answer: "Cortex",
-  },
-  {
-    type: "multiple-choice",
-    question: "The hormone which converts the ruptured follicle into a corpus luteum is...",
-    options: ["FSH", "LH", "Progesterone", "Oestrogen"],
-    answer: "LH",
-  },
-  {
-    type: "multiple-choice",
-    question: "The type of cell division by which sperms are produced is...",
-    options: ["Mitosis", "Meiosis", "Binary fission", "Budding"],
-    answer: "Meiosis",
-  },
-  {
-    type: "multiple-choice",
-    question: "The hormone that maintains pregnancy (produced by the corpus luteum and placenta) is...",
-    options: ["Oestrogen", "Testosterone", "Progesterone", "Prolactin"],
-    answer: "Progesterone",
-  },
-  {
-    type: "multiple-choice",
-    question: "The gland in the brain that secretes FSH and LH is the...",
-    options: ["Pineal gland", "Pituitary gland", "Hypothalamus", "Thyroid gland"],
-    answer: "Pituitary gland",
-  },
-  {
-    type: "multiple-choice",
-    question: "The structure formed from part foetal and part maternal tissue responsible for gas exchange and nutrition is the...",
-    options: ["Amnion", "Placenta", "Chorion", "Allantois"],
-    answer: "Placenta",
-  },
-  {
-    type: "multiple-choice",
-    question: "The hormone responsible for secondary sexual characteristics in males is...",
-    options: ["Oestrogen", "Progesterone", "Testosterone", "FSH"],
-    answer: "Testosterone",
-  },
-  {
-    type: "multiple-choice",
-    question: "The blood vessel that carries nitrogenous waste from the foetus to the placenta is the...",
-    options: ["Umbilical vein", "Umbilical artery", "Ductus venosus", "Yolk sac vessel"],
-    answer: "Umbilical artery",
-  },
-  {
-    type: "multiple-choice",
-    question: "The blood vessel that carries oxygenated blood from the placenta to the foetus is the...",
-    options: ["Umbilical artery", "Umbilical vein", "Aorta", "Pulmonary vein"],
-    answer: "Umbilical vein",
-  },
-  {
-    type: "multiple-choice",
-    question: "A gland that lubricates the tip of the penis (Cowper's gland) is also called the...",
-    options: ["Bulbourethral gland", "Prostate gland", "Seminal vesicle", "Epididymal gland"],
-    answer: "Bulbourethral gland",
-  },
-  {
-    type: "multiple-choice",
-    question: "The common tube for the passage of urine and semen is the...",
-    options: ["Vas deferens", "Ejaculatory duct", "Urethra", "Vagina"],
-    answer: "Urethra",
-  },
-  {
-    type: "multiple-choice",
-    question: "A gland that produces an alkaline medium of semen is the...",
-    options: ["Seminal vesicle", "Cowper's gland", "Prostate gland", "Bulbourethral gland"],
-    answer: "Prostate gland",
-  },
-  {
-    type: "multiple-choice",
-    question: "The type of development in birds in which the young are born fully developed and able to move and feed itself is...",
-    options: ["Altricial", "Precocial", "Ovoviviparous", "Metamorphic"],
-    answer: "Precocial",
-  },
-  {
-    type: "multiple-choice",
-    question: "The organ where testosterone is produced is the...",
-    options: ["Adrenal gland", "Ovary", "Testis", "Prostate"],
-    answer: "Testis",
-  }
+    {
+      type: "multiple-choice",
+      question:
+        "A reproductive strategy where the young receives nutrients through the placenta is called...",
+      options: ["Oviparous", "Viviparous", "Ovoviviparous", "Asexual"],
+      answer: "Viviparous",
+    },
+    {
+      type: "multiple-choice",
+      question:
+        "The duct that transports semen and urine to the outside of the body is the...",
+      options: ["Vas deferens", "Urethra", "Ejaculatory duct", "Epididymis"],
+      answer: "Urethra",
+    },
+    {
+      type: "multiple-choice",
+      question:
+        "The structure that serves as a micro-filter during pregnancy is the...",
+      options: ["Amnion", "Placenta", "Chorion", "Umbilical cord"],
+      answer: "Placenta",
+    },
+    {
+      type: "multiple-choice",
+      question:
+        "The part of the male reproductive system which temporarily stores sperm until they mature is the...",
+      options: ["Testis", "Prostate", "Epididymis", "Seminal vesicle"],
+      answer: "Epididymis",
+    },
+    {
+      type: "multiple-choice",
+      question: "The fusion of the sperm and egg outside the body is called...",
+      options: [
+        "External fertilisation",
+        "Internal fertilisation",
+        "Ovulation",
+        "Implantation",
+      ],
+      answer: "External fertilisation",
+    },
+    {
+      type: "multiple-choice",
+      question:
+        "The development of the embryo inside an incubated egg that is laid is called...",
+      options: [
+        "Viviparous development",
+        "Oviparous development",
+        "Ovoviviparous development",
+        "Metamorphosis",
+      ],
+      answer: "Oviparous development",
+    },
+    {
+      type: "multiple-choice",
+      question:
+        "The development of the embryo in the uterus and the young are born alive is known as...",
+      options: ["Oviparous", "Viviparous", "Ovoviviparous", "Parthenogenesis"],
+      answer: "Viviparous",
+    },
+    {
+      type: "multiple-choice",
+      question:
+        "The structure in the sperm cell that contains enzymes used to penetrate the ovum is the...",
+      options: ["Acrosome", "Mitochondrion", "Nucleus", "Flagellum"],
+      answer: "Acrosome",
+    },
+    {
+      type: "multiple-choice",
+      question:
+        "The hollow ball of cells formed in early development is called a...",
+      options: ["Morula", "Blastocyst", "Gastrula", "Zygote"],
+      answer: "Blastocyst",
+    },
+    {
+      type: "multiple-choice",
+      question:
+        "The lining of the uterus which is richly supplied with blood vessels is the...",
+      options: ["Perimetrium", "Myometrium", "Endometrium", "Serosa"],
+      answer: "Endometrium",
+    },
+    {
+      type: "multiple-choice",
+      question:
+        "The part of the female reproductive system in which fertilisation normally takes place is the...",
+      options: ["Vagina", "Uterus", "Cervix", "Fallopian tube"],
+      answer: "Fallopian tube",
+    },
+    {
+      type: "multiple-choice",
+      question:
+        "The hormone produced by the pituitary gland that stimulates growth of the Graafian follicle is...",
+      options: ["LH", "FSH", "Progesterone", "Oestrogen"],
+      answer: "FSH",
+    },
+    {
+      type: "multiple-choice",
+      question:
+        "The layer within the ovary where ova are formed is the ovarian...",
+      options: ["Medulla", "Cortex", "Follicle", "Stroma"],
+      answer: "Cortex",
+    },
+    {
+      type: "multiple-choice",
+      question:
+        "The hormone which converts the ruptured follicle into a corpus luteum is...",
+      options: ["FSH", "LH", "Progesterone", "Oestrogen"],
+      answer: "LH",
+    },
+    {
+      type: "multiple-choice",
+      question: "The type of cell division by which sperms are produced is...",
+      options: ["Mitosis", "Meiosis", "Binary fission", "Budding"],
+      answer: "Meiosis",
+    },
+    {
+      type: "multiple-choice",
+      question:
+        "The hormone that maintains pregnancy (produced by the corpus luteum and placenta) is...",
+      options: ["Oestrogen", "Testosterone", "Progesterone", "Prolactin"],
+      answer: "Progesterone",
+    },
+    {
+      type: "multiple-choice",
+      question: "The gland in the brain that secretes FSH and LH is the...",
+      options: [
+        "Pineal gland",
+        "Pituitary gland",
+        "Hypothalamus",
+        "Thyroid gland",
+      ],
+      answer: "Pituitary gland",
+    },
+    {
+      type: "multiple-choice",
+      question:
+        "The structure formed from part foetal and part maternal tissue responsible for gas exchange and nutrition is the...",
+      options: ["Amnion", "Placenta", "Chorion", "Allantois"],
+      answer: "Placenta",
+    },
+    {
+      type: "multiple-choice",
+      question:
+        "The hormone responsible for secondary sexual characteristics in males is...",
+      options: ["Oestrogen", "Progesterone", "Testosterone", "FSH"],
+      answer: "Testosterone",
+    },
+    {
+      type: "multiple-choice",
+      question:
+        "The blood vessel that carries nitrogenous waste from the foetus to the placenta is the...",
+      options: [
+        "Umbilical vein",
+        "Umbilical artery",
+        "Ductus venosus",
+        "Yolk sac vessel",
+      ],
+      answer: "Umbilical artery",
+    },
+    {
+      type: "multiple-choice",
+      question:
+        "The blood vessel that carries oxygenated blood from the placenta to the foetus is the...",
+      options: [
+        "Umbilical artery",
+        "Umbilical vein",
+        "Aorta",
+        "Pulmonary vein",
+      ],
+      answer: "Umbilical vein",
+    },
+    {
+      type: "multiple-choice",
+      question:
+        "A gland that lubricates the tip of the penis (Cowper's gland) is also called the...",
+      options: [
+        "Bulbourethral gland",
+        "Prostate gland",
+        "Seminal vesicle",
+        "Epididymal gland",
+      ],
+      answer: "Bulbourethral gland",
+    },
+    {
+      type: "multiple-choice",
+      question: "The common tube for the passage of urine and semen is the...",
+      options: ["Vas deferens", "Ejaculatory duct", "Urethra", "Vagina"],
+      answer: "Urethra",
+    },
+    {
+      type: "multiple-choice",
+      question: "A gland that produces an alkaline medium of semen is the...",
+      options: [
+        "Seminal vesicle",
+        "Cowper's gland",
+        "Prostate gland",
+        "Bulbourethral gland",
+      ],
+      answer: "Prostate gland",
+    },
+    {
+      type: "multiple-choice",
+      question:
+        "The type of development in birds in which the young are born fully developed and able to move and feed itself is...",
+      options: ["Altricial", "Precocial", "Ovoviviparous", "Metamorphic"],
+      answer: "Precocial",
+    },
+    {
+      type: "multiple-choice",
+      question: "The organ where testosterone is produced is the...",
+      options: ["Adrenal gland", "Ovary", "Testis", "Prostate"],
+      answer: "Testis",
+    },
   ],
   Genetics: [
     {
@@ -1434,207 +1587,238 @@ const fillInBlankQuestions = {
 
   Meiosis: [
     {
-  type: "fill-in-blank",
-  question: "The point of crossing over between two adjacent chromosomes is called a __________.",
-  answer: "chiasma",
-},
-{
-  type: "fill-in-blank",
-  question: "The splitting of the cytoplasm during cell division is called __________.",
-  answer: "cytokinesis",
-},
-{
-  type: "fill-in-blank",
-  question: "The failure of chromosome pairs to separate during meiosis is called __________.",
-  answer: "non-disjunction",
-},
-{
-  type: "fill-in-blank",
-  question: "The structures in the cell that forms the spindle fibres are the __________.",
-  answer: "centrioles",
-},
-{
-  type: "fill-in-blank",
-  question: "The phase of meiosis when homologous chromosomes are aligned at the equator of the cell is __________.",
-  answer: "metaphase i",
-},
-{
-  type: "fill-in-blank",
-  question: "The point at which the two chromatids of a chromosome are joined together is the __________.",
-  answer: "centromere",
-},
-{
-  type: "fill-in-blank",
-  question: "The division of the nucleus is called __________.",
-  answer: "karyokinesis",
-},
-{
-  type: "fill-in-blank",
-  question: "Exchange of genetic material between chromatids of homologous chromosomes is called __________.",
-  answer: "crossing over",
-},
-{
-  type: "fill-in-blank",
-  question: "Site of meiosis in females is the __________.",
-  answer: "ovaries",
-},
-{
-  type: "fill-in-blank",
-  question: "A genetic disorder caused by having an extra copy of chromosome number 21 is __________ syndrome.",
-  answer: "down",
-},
-{
-  type: "fill-in-blank",
-  question: "The Structure formed by the centrioles during cell division are the __________.",
-  answer: "spindle fibres",
-},
-{
-  type: "fill-in-blank",
-  question: "The non-sex chromosomes in humans are called __________.",
-  answer: "autosomes",
-},
-{
-  type: "fill-in-blank",
-  question: "The condition in a cell where there is only one set of chromosomes is called __________.",
-  answer: "haploid",
-},
-{
-  type: "fill-in-blank",
-  question: "The structure that is responsible for the formation of spindle fibres during cell division in animal cells and is made up of two centrioles is the __________.",
-  answer: "centrosome",
-},
-{
-  type: "fill-in-blank",
-  question: "The phase in the cell cycle during which the cell growth occurs is __________.",
-  answer: "interphase",
-},
-{
-  type: "fill-in-blank",
-  question: "Chromosomes that carry the same set of genes are __________ chromosomes.",
-  answer: "homologous",
-},
-{
-  type: "fill-in-blank",
-  question: "The structure that joins two chromatids of a chromosome is the __________.",
-  answer: "centromere",
-},
-{
-  type: "fill-in-blank",
-  question: "The division of the cytoplasm of a cell during cell division is __________.",
-  answer: "cytokinesis",
-},
-{
-  type: "fill-in-blank",
-  question: "The process during meiosis where there is an exchange of genetic material between chromatids is called __________.",
-  answer: "crossing over",
-},
-{
-  type: "fill-in-blank",
-  question: "The structures in animal cells that give rise to spindle fibres during cell division are the __________.",
-  answer: "centrosomes",
-},
-{
-  type: "fill-in-blank",
-  question: "The phase in the cell cycle during which DNA replication takes place is __________.",
-  answer: "interphase",
-},
-{
-  type: "fill-in-blank",
-  question: "The point where adjacent chromatids overlap during meiosis is called a __________.",
-  answer: "chiasma",
-},
-{
-  type: "fill-in-blank",
-  question: "The representation showing the arrangement of a diploid set of chromosomes is a __________.",
-  answer: "karyotype",
-},
+      type: "fill-in-blank",
+      question:
+        "The point of crossing over between two adjacent chromosomes is called a __________.",
+      answer: "chiasma",
+    },
+    {
+      type: "fill-in-blank",
+      question:
+        "The splitting of the cytoplasm during cell division is called __________.",
+      answer: "cytokinesis",
+    },
+    {
+      type: "fill-in-blank",
+      question:
+        "The failure of chromosome pairs to separate during meiosis is called __________.",
+      answer: "non-disjunction",
+    },
+    {
+      type: "fill-in-blank",
+      question:
+        "The structures in the cell that forms the spindle fibres are the __________.",
+      answer: "centrioles",
+    },
+    {
+      type: "fill-in-blank",
+      question:
+        "The phase of meiosis when homologous chromosomes are aligned at the equator of the cell is __________.",
+      answer: "metaphase i",
+    },
+    {
+      type: "fill-in-blank",
+      question:
+        "The point at which the two chromatids of a chromosome are joined together is the __________.",
+      answer: "centromere",
+    },
+    {
+      type: "fill-in-blank",
+      question: "The division of the nucleus is called __________.",
+      answer: "karyokinesis",
+    },
+    {
+      type: "fill-in-blank",
+      question:
+        "Exchange of genetic material between chromatids of homologous chromosomes is called __________.",
+      answer: "crossing over",
+    },
+    {
+      type: "fill-in-blank",
+      question: "Site of meiosis in females is the __________.",
+      answer: "ovaries",
+    },
+    {
+      type: "fill-in-blank",
+      question:
+        "A genetic disorder caused by having an extra copy of chromosome number 21 is __________ syndrome.",
+      answer: "down",
+    },
+    {
+      type: "fill-in-blank",
+      question:
+        "The Structure formed by the centrioles during cell division are the __________.",
+      answer: "spindle fibres",
+    },
+    {
+      type: "fill-in-blank",
+      question: "The non-sex chromosomes in humans are called __________.",
+      answer: "autosomes",
+    },
+    {
+      type: "fill-in-blank",
+      question:
+        "The condition in a cell where there is only one set of chromosomes is called __________.",
+      answer: "haploid",
+    },
+    {
+      type: "fill-in-blank",
+      question:
+        "The structure that is responsible for the formation of spindle fibres during cell division in animal cells and is made up of two centrioles is the __________.",
+      answer: "centrosome",
+    },
+    {
+      type: "fill-in-blank",
+      question:
+        "The phase in the cell cycle during which the cell growth occurs is __________.",
+      answer: "interphase",
+    },
+    {
+      type: "fill-in-blank",
+      question:
+        "Chromosomes that carry the same set of genes are __________ chromosomes.",
+      answer: "homologous",
+    },
+    {
+      type: "fill-in-blank",
+      question:
+        "The structure that joins two chromatids of a chromosome is the __________.",
+      answer: "centromere",
+    },
+    {
+      type: "fill-in-blank",
+      question:
+        "The division of the cytoplasm of a cell during cell division is __________.",
+      answer: "cytokinesis",
+    },
+    {
+      type: "fill-in-blank",
+      question:
+        "The process during meiosis where there is an exchange of genetic material between chromatids is called __________.",
+      answer: "crossing over",
+    },
+    {
+      type: "fill-in-blank",
+      question:
+        "The structures in animal cells that give rise to spindle fibres during cell division are the __________.",
+      answer: "centrosomes",
+    },
+    {
+      type: "fill-in-blank",
+      question:
+        "The phase in the cell cycle during which DNA replication takes place is __________.",
+      answer: "interphase",
+    },
+    {
+      type: "fill-in-blank",
+      question:
+        "The point where adjacent chromatids overlap during meiosis is called a __________.",
+      answer: "chiasma",
+    },
+    {
+      type: "fill-in-blank",
+      question:
+        "The representation showing the arrangement of a diploid set of chromosomes is a __________.",
+      answer: "karyotype",
+    },
   ],
   DNA: [
     {
-  type: "fill-in-blank",
-  question: "A tangled network of DNA and protein located within the nucleus is called the __________.",
-  answer: "chromatin network",
-},
-{
-  type: "fill-in-blank",
-  question: "The bonds that hold the two strands of a DNA molecule together are __________ bonds.",
-  answer: "hydrogen",
-},
-{
-  type: "fill-in-blank",
-  question: "The sugar found in DNA is __________ sugar.",
-  answer: "deoxyribose",
-},
-{
-  type: "fill-in-blank",
-  question: "The analysis of DNA samples to identify individuals that may be related is called DNA __________.",
-  answer: "profiling",
-},
-{
-  type: "fill-in-blank",
-  question: "The process whereby DNA makes an exact copy of itself is called DNA __________.",
-  answer: "replication",
-},
-{
-  type: "fill-in-blank",
-  question: "The monomers of nucleic acids are called __________.",
-  answer: "nucleotides",
-},
-{
-  type: "fill-in-blank",
-  question: "The natural shape of a DNA molecule is a __________.",
-  answer: "double helix",
-},
-{
-  type: "fill-in-blank",
-  question: "Sections of DNA that carry hereditary information are called __________.",
-  answer: "genes",
-},
-{
-  type: "fill-in-blank",
-  question: "The sugar that forms part of a nucleotide in RNA is __________.",
-  answer: "ribose",
-},
-{
-  type: "fill-in-blank",
-  question: "The process whereby mRNA is formed from DNA is called __________.",
-  answer: "transcription",
-},
-{
-  type: "fill-in-blank",
-  question: "Base triplets found on mRNA are called __________.",
-  answer: "codons",
-},
-{
-  type: "fill-in-blank",
-  question: "The cell organelle to which mRNA attaches during protein synthesis is the __________.",
-  answer: "ribosome",
-},
-{
-  type: "fill-in-blank",
-  question: "The process of arranging amino acids according to the sequence of bases on mRNA is called __________.",
-  answer: "translation",
-},
-{
-  type: "fill-in-blank",
-  question: "The organelle in a cell where translation occurs is the __________.",
-  answer: "ribosome",
-},
-{
-  type: "fill-in-blank",
-  question: "The triplet of bases found on a tRNA molecule is called a(n) __________.",
-  answer: "anticodon",
-},
-{
-  type: "fill-in-blank",
-  question: "The type of RNA containing anticodons is __________.",
-  answer: "tRNA",
-},
-{
-  type: "fill-in-blank",
-  question: "Bonds that join amino acids together are __________ bonds.",
-  answer: "peptide",
-},
+      type: "fill-in-blank",
+      question:
+        "A tangled network of DNA and protein located within the nucleus is called the __________.",
+      answer: "chromatin network",
+    },
+    {
+      type: "fill-in-blank",
+      question:
+        "The bonds that hold the two strands of a DNA molecule together are __________ bonds.",
+      answer: "hydrogen",
+    },
+    {
+      type: "fill-in-blank",
+      question: "The sugar found in DNA is __________ sugar.",
+      answer: "deoxyribose",
+    },
+    {
+      type: "fill-in-blank",
+      question:
+        "The analysis of DNA samples to identify individuals that may be related is called DNA __________.",
+      answer: "profiling",
+    },
+    {
+      type: "fill-in-blank",
+      question:
+        "The process whereby DNA makes an exact copy of itself is called DNA __________.",
+      answer: "replication",
+    },
+    {
+      type: "fill-in-blank",
+      question: "The monomers of nucleic acids are called __________.",
+      answer: "nucleotides",
+    },
+    {
+      type: "fill-in-blank",
+      question: "The natural shape of a DNA molecule is a __________.",
+      answer: "double helix",
+    },
+    {
+      type: "fill-in-blank",
+      question:
+        "Sections of DNA that carry hereditary information are called __________.",
+      answer: "genes",
+    },
+    {
+      type: "fill-in-blank",
+      question:
+        "The sugar that forms part of a nucleotide in RNA is __________.",
+      answer: "ribose",
+    },
+    {
+      type: "fill-in-blank",
+      question:
+        "The process whereby mRNA is formed from DNA is called __________.",
+      answer: "transcription",
+    },
+    {
+      type: "fill-in-blank",
+      question: "Base triplets found on mRNA are called __________.",
+      answer: "codons",
+    },
+    {
+      type: "fill-in-blank",
+      question:
+        "The cell organelle to which mRNA attaches during protein synthesis is the __________.",
+      answer: "ribosome",
+    },
+    {
+      type: "fill-in-blank",
+      question:
+        "The process of arranging amino acids according to the sequence of bases on mRNA is called __________.",
+      answer: "translation",
+    },
+    {
+      type: "fill-in-blank",
+      question:
+        "The organelle in a cell where translation occurs is the __________.",
+      answer: "ribosome",
+    },
+    {
+      type: "fill-in-blank",
+      question:
+        "The triplet of bases found on a tRNA molecule is called a(n) __________.",
+      answer: "anticodon",
+    },
+    {
+      type: "fill-in-blank",
+      question: "The type of RNA containing anticodons is __________.",
+      answer: "tRNA",
+    },
+    {
+      type: "fill-in-blank",
+      question: "Bonds that join amino acids together are __________ bonds.",
+      answer: "peptide",
+    },
   ],
 
   plantHormones: [
@@ -1666,140 +1850,163 @@ const fillInBlankQuestions = {
     },
   ],
   Reproduction: [
-  {
-    type: "fill-in-blank",
-    question: "The complete development of the embryo inside an egg in the female body is called __________.",
-    answer: "ovoviviparous development",
-  },
-  {
-    type: "fill-in-blank",
-    question: "The development of the embryo in which very little energy is used and parental care is required is called __________ development.",
-    answer: "altricial",
-  },
-  {
-    type: "fill-in-blank",
-    question: "The development of the embryo in which a lot of energy is used and the young are able to move directly after hatching is called __________ development.",
-    answer: "precocial",
-  },
-  {
-    type: "fill-in-blank",
-    question: "The structure that provides nutrition to the embryo in the amniotic egg is the __________.",
-    answer: "yolk sac",
-  },
-  {
-    type: "fill-in-blank",
-    question: "The fluid-filled bag around the embryo is the __________.",
-    answer: "amnion",
-  },
-  {
-    type: "fill-in-blank",
-    question: "The liquid that surrounds the human embryo is called the __________.",
-    answer: "amniotic fluid",
-  },
-  {
-    type: "fill-in-blank",
-    question: "The lining of the uterus which is richly supplied with blood vessels is the __________.",
-    answer: "endometrium",
-  },
-  {
-    type: "fill-in-blank",
-    question: "The name given to the embryo after it reaches 12 weeks is the __________.",
-    answer: "foetus",
-  },
-  {
-    type: "fill-in-blank",
-    question: "Another name for the period of pregnancy is __________.",
-    answer: "gestation",
-  },
-  {
-    type: "fill-in-blank",
-    question: "The process by which the embryo becomes attached to the uterine wall is called __________.",
-    answer: "implantation",
-  },
-  {
-    type: "fill-in-blank",
-    question: "The 28-day reproductive cycle in females involving changes in the ovary and uterus is called the __________.",
-    answer: "menstrual cycle",
-  },
-  {
-    type: "fill-in-blank",
-    question: "Tearing away of the endometrial lining of the uterus accompanied by loss of blood is called __________.",
-    answer: "menstruation",
-  },
-  {
-    type: "fill-in-blank",
-    question: "The cell division by which the zygote becomes multicellular is called __________.",
-    answer: "mitosis",
-  },
-  {
-    type: "fill-in-blank",
-    question: "Production of ova by meiosis is called __________.",
-    answer: "oogenesis",
-  },
-  {
-    type: "fill-in-blank",
-    question: "The process by which an ovum is released from the ovary in humans is called __________.",
-    answer: "ovulation",
-  },
-  {
-    type: "fill-in-blank",
-    question: "The stage when sexual maturity is reached in males and females is called __________.",
-    answer: "puberty",
-  },
-  {
-    type: "fill-in-blank",
-    question: "Production of spermatozoa by meiosis is called __________.",
-    answer: "spermatogenesis",
-  },
-  {
-    type: "fill-in-blank",
-    question: "A hollow rope-like tube which attaches the embryo to the placenta is the __________.",
-    answer: "umbilical cord",
-  },
-  {
-    type: "fill-in-blank",
-    question: "The sac-like structure that contains the testes is the __________.",
-    answer: "scrotum",
-  },
-  {
-    type: "fill-in-blank",
-    question: "A gland that provides nutrients for the sperms is the __________.",
-    answer: "seminal vesicle",
-  },
-  {
-    type: "fill-in-blank",
-    question: "A tube that transfers sperms to the urethra is the __________.",
-    answer: "vas deferens",
-  },
-  {
-    type: "fill-in-blank",
-    question: "Finger-like projections that develop from the outer membrane of an embryo after implantation are called __________.",
-    answer: "chorionic villi",
-  },
-  {
-    type: "fill-in-blank",
-    question: "The fluid that protects the developing foetus against mechanical injury is the __________.",
-    answer: "amniotic fluid",
-  },
-  {
-    type: "fill-in-blank",
-    question: "The organelles found in large quantities in the neck region of a sperm cell are the __________.",
-    answer: "mitochondria",
-  },
-  {
-    type: "fill-in-blank",
-    question: "A blood vessel that transports carbon dioxide from the foetus to the placenta is the __________.",
-    answer: "umbilical artery",
-  },
-  {
-    type: "fill-in-blank",
-    question: "The hormone produced by the pituitary gland that stimulates the secretion of milk after birth is __________.",
-    answer: "prolactin",
-  },
-  {
-    type: "fill-in-blank",
-    question: "The lower neck of the uterus that opens into the vagina is called the __________.",
-    answer: "cervix",
-  },
-]
+    {
+      type: "fill-in-blank",
+      question:
+        "The complete development of the embryo inside an egg in the female body is called __________.",
+      answer: "ovoviviparous development",
+    },
+    {
+      type: "fill-in-blank",
+      question:
+        "The development of the embryo in which very little energy is used and parental care is required is called __________ development.",
+      answer: "altricial",
+    },
+    {
+      type: "fill-in-blank",
+      question:
+        "The development of the embryo in which a lot of energy is used and the young are able to move directly after hatching is called __________ development.",
+      answer: "precocial",
+    },
+    {
+      type: "fill-in-blank",
+      question:
+        "The structure that provides nutrition to the embryo in the amniotic egg is the __________.",
+      answer: "yolk sac",
+    },
+    {
+      type: "fill-in-blank",
+      question: "The fluid-filled bag around the embryo is the __________.",
+      answer: "amnion",
+    },
+    {
+      type: "fill-in-blank",
+      question:
+        "The liquid that surrounds the human embryo is called the __________.",
+      answer: "amniotic fluid",
+    },
+    {
+      type: "fill-in-blank",
+      question:
+        "The lining of the uterus which is richly supplied with blood vessels is the __________.",
+      answer: "endometrium",
+    },
+    {
+      type: "fill-in-blank",
+      question:
+        "The name given to the embryo after it reaches 12 weeks is the __________.",
+      answer: "foetus",
+    },
+    {
+      type: "fill-in-blank",
+      question: "Another name for the period of pregnancy is __________.",
+      answer: "gestation",
+    },
+    {
+      type: "fill-in-blank",
+      question:
+        "The process by which the embryo becomes attached to the uterine wall is called __________.",
+      answer: "implantation",
+    },
+    {
+      type: "fill-in-blank",
+      question:
+        "The 28-day reproductive cycle in females involving changes in the ovary and uterus is called the __________.",
+      answer: "menstrual cycle",
+    },
+    {
+      type: "fill-in-blank",
+      question:
+        "Tearing away of the endometrial lining of the uterus accompanied by loss of blood is called __________.",
+      answer: "menstruation",
+    },
+    {
+      type: "fill-in-blank",
+      question:
+        "The cell division by which the zygote becomes multicellular is called __________.",
+      answer: "mitosis",
+    },
+    {
+      type: "fill-in-blank",
+      question: "Production of ova by meiosis is called __________.",
+      answer: "oogenesis",
+    },
+    {
+      type: "fill-in-blank",
+      question:
+        "The process by which an ovum is released from the ovary in humans is called __________.",
+      answer: "ovulation",
+    },
+    {
+      type: "fill-in-blank",
+      question:
+        "The stage when sexual maturity is reached in males and females is called __________.",
+      answer: "puberty",
+    },
+    {
+      type: "fill-in-blank",
+      question: "Production of spermatozoa by meiosis is called __________.",
+      answer: "spermatogenesis",
+    },
+    {
+      type: "fill-in-blank",
+      question:
+        "A hollow rope-like tube which attaches the embryo to the placenta is the __________.",
+      answer: "umbilical cord",
+    },
+    {
+      type: "fill-in-blank",
+      question:
+        "The sac-like structure that contains the testes is the __________.",
+      answer: "scrotum",
+    },
+    {
+      type: "fill-in-blank",
+      question:
+        "A gland that provides nutrients for the sperms is the __________.",
+      answer: "seminal vesicle",
+    },
+    {
+      type: "fill-in-blank",
+      question:
+        "A tube that transfers sperms to the urethra is the __________.",
+      answer: "vas deferens",
+    },
+    {
+      type: "fill-in-blank",
+      question:
+        "Finger-like projections that develop from the outer membrane of an embryo after implantation are called __________.",
+      answer: "chorionic villi",
+    },
+    {
+      type: "fill-in-blank",
+      question:
+        "The fluid that protects the developing foetus against mechanical injury is the __________.",
+      answer: "amniotic fluid",
+    },
+    {
+      type: "fill-in-blank",
+      question:
+        "The organelles found in large quantities in the neck region of a sperm cell are the __________.",
+      answer: "mitochondria",
+    },
+    {
+      type: "fill-in-blank",
+      question:
+        "A blood vessel that transports carbon dioxide from the foetus to the placenta is the __________.",
+      answer: "umbilical artery",
+    },
+    {
+      type: "fill-in-blank",
+      question:
+        "The hormone produced by the pituitary gland that stimulates the secretion of milk after birth is __________.",
+      answer: "prolactin",
+    },
+    {
+      type: "fill-in-blank",
+      question:
+        "The lower neck of the uterus that opens into the vagina is called the __________.",
+      answer: "cervix",
+    },
+  ],
 };
