@@ -713,246 +713,375 @@ const questions = {
   Genetics: [
     {
       type: "multiple-choice",
-      question: "What is the term for the study of heredity?",
-      options: ["Genetics", "Evolution", "Ecology", "Physiology"],
-      answer: "Genetics",
+      question:
+        "The passing of hereditary characteristics from parent to offspring is known as...",
+      options: ["Genetics", "Heredity", "Inheritance", "Variation"],
+      answer: "Inheritance",
     },
     {
       type: "multiple-choice",
       question:
-        "What is the term for the passing of traits from parents to offspring?",
-      options: ["Genetics", "Heredity", "Evolution", "Ecology"],
-      answer: "Heredity",
+        "A group of organisms with similar characteristics that can interbreed to produce fertile offspring is called a...",
+      options: ["Species", "Population", "Genus", "Family"],
+      answer: "Species",
     },
     {
       type: "multiple-choice",
-      question: "What is the term for the physical expression of a gene?",
-      options: ["Genotype", "Phenotype", "Allele", "Chromosome"],
+      question:
+        "A group of individuals of the same species living in a particular habitat is a...",
+      options: ["Population", "Community", "Ecosystem", "Gene pool"],
+      answer: "Population",
+    },
+    {
+      type: "multiple-choice",
+      question: "The exact position of a gene on a chromosome is called a...",
+      options: ["Locus", "Allele", "Codon", "Centromere"],
+      answer: "Locus",
+    },
+    {
+      type: "multiple-choice",
+      question:
+        "Different forms of a gene that occur at the same locus on homologous chromosomes are called...",
+      options: ["Alleles", "Chromatids", "Loci", "Gametes"],
+      answer: "Alleles",
+    },
+    {
+      type: "multiple-choice",
+      question:
+        "The physical appearance of an organism based on its genotype is known as its...",
+      options: ["Phenotype", "Genotype", "Trait", "Karyotype"],
       answer: "Phenotype",
     },
     {
       type: "multiple-choice",
-      question: "What is the term for the genetic makeup of an organism?",
-      options: ["Genotype", "Phenotype", "Allele", "Chromosome"],
+      question: "The genetic composition of an organism is known as its...",
+      options: ["Genotype", "Phenotype", "Trait", "Genome"],
       answer: "Genotype",
     },
     {
       type: "multiple-choice",
-      question: "What is the term for a variant form of a gene?",
-      options: ["Genotype", "Phenotype", "Allele", "Chromosome"],
-      answer: "Allele",
+      question:
+        "An allele that is expressed in both heterozygous and homozygous conditions is called a...",
+      options: [
+        "Dominant allele",
+        "Recessive allele",
+        "Co-dominant allele",
+        "Incomplete allele",
+      ],
+      answer: "Dominant allele",
     },
     {
       type: "multiple-choice",
       question:
-        "What is the term for a segment of DNA that codes for a protein?",
-      options: ["Gene", "Chromosome", "Allele", "Genotype"],
-      answer: "Gene",
+        "An allele that is masked in the heterozygous condition is called a...",
+      options: [
+        "Recessive allele",
+        "Dominant allele",
+        "Autosomal allele",
+        "Linked allele",
+      ],
+      answer: "Recessive allele",
     },
     {
       type: "multiple-choice",
-      question: "What is the term for a thread-like structure of DNA?",
-      options: ["Gene", "Chromosome", "Allele", "Genotype"],
-      answer: "Chromosome",
+      question:
+        "When both alleles are identical for a particular trait, the organism is said to be...",
+      options: ["Homozygous", "Heterozygous", "Hybrid", "Diploid"],
+      answer: "Homozygous",
     },
     {
       type: "multiple-choice",
-      question: "What is the term for the process of forming gametes?",
-      options: ["Mitosis", "Meiosis", "Cytokinesis", "Replication"],
-      answer: "Meiosis",
+      question:
+        "When two different alleles are present for a particular trait, the organism is...",
+      options: ["Heterozygous", "Homozygous", "Hybrid", "Recessive"],
+      answer: "Heterozygous",
     },
     {
       type: "multiple-choice",
-      question: "What is the term for the process of forming haploid cells?",
-      options: ["Mitosis", "Meiosis", "Cytokinesis", "Replication"],
-      answer: "Meiosis",
+      question: "A genetic cross involving one characteristic is called a...",
+      options: [
+        "Monohybrid cross",
+        "Dihybrid cross",
+        "Polygenic cross",
+        "Test cross",
+      ],
+      answer: "Monohybrid cross",
     },
     {
       type: "multiple-choice",
-      question: "What is the term for the process of forming diploid cells?",
-      options: ["Mitosis", "Meiosis", "Cytokinesis", "Replication"],
-      answer: "Mitosis",
+      question:
+        "A genetic cross involving two characteristics is known as a...",
+      options: [
+        "Dihybrid cross",
+        "Monohybrid cross",
+        "Back cross",
+        "Incomplete cross",
+      ],
+      answer: "Dihybrid cross",
     },
     {
       type: "multiple-choice",
-      question: "What is the term for the process of forming somatic cells?",
-      options: ["Mitosis", "Meiosis", "Cytokinesis", "Replication"],
-      answer: "Mitosis",
+      question:
+        "A cross where the dominant allele masks the recessive allele in the heterozygous condition is called...",
+      options: [
+        "Complete dominance",
+        "Co-dominance",
+        "Incomplete dominance",
+        "Hybridisation",
+      ],
+      answer: "Complete dominance",
     },
     {
       type: "multiple-choice",
-      question: "What is the term for the process of forming gametes?",
-      options: ["Mitosis", "Meiosis", "Cytokinesis", "Replication"],
-      answer: "Meiosis",
+      question:
+        "When the heterozygous phenotype is intermediate between the two parents, this is known as...",
+      options: [
+        "Incomplete dominance",
+        "Complete dominance",
+        "Co-dominance",
+        "Epistasis",
+      ],
+      answer: "Incomplete dominance",
     },
     {
       type: "multiple-choice",
-      question: "What is the term for the process of forming haploid cells?",
-      options: ["Mitosis", "Meiosis", "Cytokinesis", "Replication"],
-      answer: "Meiosis",
+      question:
+        "When both alleles are equally expressed in the phenotype, this is known as...",
+      options: [
+        "Co-dominance",
+        "Incomplete dominance",
+        "Hybridisation",
+        "Mutation",
+      ],
+      answer: "Co-dominance",
     },
     {
       type: "multiple-choice",
-      question: "What is the term for the process of forming diploid cells?",
-      options: ["Mitosis", "Meiosis", "Cytokinesis", "Replication"],
-      answer: "Mitosis",
+      question:
+        "When more than two alternative forms of a gene exist at the same locus, it is called...",
+      options: [
+        "Multiple alleles",
+        "Polygenic inheritance",
+        "Crossing over",
+        "Mutation",
+      ],
+      answer: "Multiple alleles",
     },
     {
       type: "multiple-choice",
-      question: "What is the term for the process of forming somatic cells?",
-      options: ["Mitosis", "Meiosis", "Cytokinesis", "Replication"],
-      answer: "Mitosis",
+      question:
+        "Traits that are carried on the sex chromosomes are known as...",
+      options: [
+        "Sex-linked traits",
+        "Autosomal traits",
+        "Recessive traits",
+        "Dominant traits",
+      ],
+      answer: "Sex-linked traits",
     },
     {
       type: "multiple-choice",
-      question: "What is the term for the process of forming gametes?",
-      options: ["Mitosis", "Meiosis", "Cytokinesis", "Replication"],
-      answer: "Meiosis",
+      question:
+        "The number, shape and arrangement of chromosomes in the nucleus of a cell is called the...",
+      options: ["Karyotype", "Phenotype", "Genotype", "Chromatid"],
+      answer: "Karyotype",
     },
     {
       type: "multiple-choice",
-      question: "What is the term for the process of forming haploid cells?",
-      options: ["Mitosis", "Meiosis", "Cytokinesis", "Replication"],
-      answer: "Meiosis",
-    },
-    {
-      type: "multiple-choice",
-      question: "What is the term for the process of forming diploid cells?",
-      options: ["Mitosis", "Meiosis", "Cytokinesis", "Replication"],
-      answer: "Mitosis",
-    },
-    {
-      type: "multiple-choice",
-      question: "What is the term for the process of forming somatic cells?",
-      options: ["Mitosis", "Meiosis", "Cytokinesis", "Replication"],
-      answer: "Mitosis",
+      question: "A pair of chromosomes that carry the same genes is called...",
+      options: [
+        "Homologous chromosomes",
+        "Autosomes",
+        "Sister chromatids",
+        "Haploid chromosomes",
+      ],
+      answer: "Homologous chromosomes",
     },
   ],
   Evolution: [
     {
       type: "multiple-choice",
       question:
-        "What is the term for the process of change in species over time?",
-      options: ["Evolution", "Natural selection", "Mutation", "Adaptation"],
+        "The process by which populations change over generations is called...",
+      options: ["Evolution", "Speciation", "Mutation", "Selection"],
       answer: "Evolution",
     },
     {
       type: "multiple-choice",
       question:
-        "What is the term for the process by which organisms better adapted to their environment tend to survive and reproduce?",
-      options: ["Evolution", "Natural selection", "Mutation", "Adaptation"],
-      answer: "Natural selection",
-    },
-    {
-      type: "multiple-choice",
-      question: "What is the term for a change in the DNA sequence?",
-      options: ["Evolution", "Natural selection", "Mutation", "Adaptation"],
-      answer: "Mutation",
+        "The scientist who proposed the theory of natural selection was...",
+      options: [
+        "Charles Darwin",
+        "Gregor Mendel",
+        "Jean Lamarck",
+        "Louis Pasteur",
+      ],
+      answer: "Charles Darwin",
     },
     {
       type: "multiple-choice",
       question:
-        "What is the term for a trait that increases an organism's chance of survival?",
-      options: ["Evolution", "Natural selection", "Mutation", "Adaptation"],
-      answer: "Adaptation",
+        "The theory that organisms with advantageous traits survive and reproduce is known as...",
+      options: [
+        "Natural selection",
+        "Artificial selection",
+        "Mutation theory",
+        "Adaptation",
+      ],
+      answer: "Natural selection",
     },
     {
       type: "multiple-choice",
-      question: "What is the term for the process of forming new species?",
-      options: ["Speciation", "Natural selection", "Mutation", "Adaptation"],
+      question:
+        "Evolution that occurs over long periods of time through small changes is called...",
+      options: [
+        "Gradualism",
+        "Punctuated equilibrium",
+        "Speciation",
+        "Convergence",
+      ],
+      answer: "Gradualism",
+    },
+    {
+      type: "multiple-choice",
+      question:
+        "Evolution characterized by long periods of little or no change followed by rapid change is called...",
+      options: [
+        "Punctuated equilibrium",
+        "Gradualism",
+        "Mutation",
+        "Artificial selection",
+      ],
+      answer: "Punctuated equilibrium",
+    },
+    {
+      type: "multiple-choice",
+      question: "The formation of a new species is called...",
+      options: ["Speciation", "Mutation", "Evolution", "Adaptation"],
       answer: "Speciation",
     },
     {
       type: "multiple-choice",
-      question: "What is the term for the process of forming new species?",
-      options: ["Speciation", "Natural selection", "Mutation", "Adaptation"],
-      answer: "Speciation",
+      question:
+        "Speciation that occurs due to a geographical barrier is called...",
+      options: [
+        "Allopatric speciation",
+        "Sympatric speciation",
+        "Reproductive isolation",
+        "Parallel evolution",
+      ],
+      answer: "Allopatric speciation",
     },
     {
       type: "multiple-choice",
-      question: "What is the term for the process of forming new species?",
-      options: ["Speciation", "Natural selection", "Mutation", "Adaptation"],
-      answer: "Speciation",
+      question:
+        "A mechanism that prevents two species from mating is known as...",
+      options: [
+        "Reproductive isolation",
+        "Mutation",
+        "Geographical isolation",
+        "Adaptation",
+      ],
+      answer: "Reproductive isolation",
     },
     {
       type: "multiple-choice",
-      question: "What is the term for the process of forming new species?",
-      options: ["Speciation", "Natural selection", "Mutation", "Adaptation"],
-      answer: "Speciation",
+      question: "Artificial selection refers to...",
+      options: [
+        "Humans breeding organisms for desired traits",
+        "Nature selecting traits",
+        "Random mutations",
+        "Survival of the fittest",
+      ],
+      answer: "Humans breeding organisms for desired traits",
     },
     {
       type: "multiple-choice",
-      question: "What is the term for the process of forming new species?",
-      options: ["Speciation", "Natural selection", "Mutation", "Adaptation"],
-      answer: "Speciation",
+      question:
+        "When individuals that are closely related mate, it is known as...",
+      options: ["Inbreeding", "Outbreeding", "Crossbreeding", "Speciation"],
+      answer: "Inbreeding",
     },
     {
       type: "multiple-choice",
-      question: "What is the term for the process of forming new species?",
-      options: ["Speciation", "Natural selection", "Mutation", "Adaptation"],
-      answer: "Speciation",
+      question:
+        "When individuals that are not closely related mate, it is called...",
+      options: ["Outbreeding", "Inbreeding", "Mutation", "Adaptation"],
+      answer: "Outbreeding",
     },
     {
       type: "multiple-choice",
-      question: "What is the term for the process of forming new species?",
-      options: ["Speciation", "Natural selection", "Mutation", "Adaptation"],
-      answer: "Speciation",
+      question:
+        "The group that includes modern humans and great apes is called...",
+      options: ["Hominids", "Primates", "Hominins", "Mammals"],
+      answer: "Hominids",
     },
     {
       type: "multiple-choice",
-      question: "What is the term for the process of forming new species?",
-      options: ["Speciation", "Natural selection", "Mutation", "Adaptation"],
-      answer: "Speciation",
+      question:
+        "The subgroup that includes only modern humans and early human ancestors is called...",
+      options: ["Hominins", "Primates", "Apes", "Hominids"],
+      answer: "Hominins",
     },
     {
       type: "multiple-choice",
-      question: "What is the term for the process of forming new species?",
-      options: ["Speciation", "Natural selection", "Mutation", "Adaptation"],
-      answer: "Speciation",
+      question: "‘Homo sapiens’ means...",
+      options: ["Wise human", "Modern man", "Primitive man", "Early ape"],
+      answer: "Wise human",
     },
     {
       type: "multiple-choice",
-      question: "What is the term for the process of forming new species?",
-      options: ["Speciation", "Natural selection", "Mutation", "Adaptation"],
-      answer: "Speciation",
+      question: "The ability to walk on two legs is known as...",
+      options: ["Bipedalism", "Quadrupedalism", "Adaptation", "Homology"],
+      answer: "Bipedalism",
     },
     {
       type: "multiple-choice",
-      question: "What is the term for the process of forming new species?",
-      options: ["Speciation", "Natural selection", "Mutation", "Adaptation"],
-      answer: "Speciation",
+      question:
+        "The group that includes lemurs, baboons, chimpanzees, apes, and humans is called...",
+      options: ["Primates", "Hominins", "Mammals", "Anthropoids"],
+      answer: "Primates",
     },
     {
       type: "multiple-choice",
-      question: "What is the term for the process of forming new species?",
-      options: ["Speciation", "Natural selection", "Mutation", "Adaptation"],
-      answer: "Speciation",
+      question:
+        "A diagram that shows evolutionary relationships is called a...",
+      options: ["Cladogram", "Pedigree chart", "Chromosome map", "Gene tree"],
+      answer: "Cladogram",
     },
     {
       type: "multiple-choice",
-      question: "What is the term for the process of forming new species?",
-      options: ["Speciation", "Natural selection", "Mutation", "Adaptation"],
-      answer: "Speciation",
+      question:
+        "The hole at the base of the skull where the spinal cord passes is called the...",
+      options: [
+        "Foramen magnum",
+        "Cranial ridge",
+        "Sagittal crest",
+        "Mandibular fossa",
+      ],
+      answer: "Foramen magnum",
     },
     {
       type: "multiple-choice",
-      question: "What is the term for the process of forming new species?",
-      options: ["Speciation", "Natural selection", "Mutation", "Adaptation"],
-      answer: "Speciation",
+      question:
+        "Differences in physical appearance between males and females of a species are called...",
+      options: ["Sexual dimorphism", "Mutation", "Adaptation", "Hybridisation"],
+      answer: "Sexual dimorphism",
     },
     {
       type: "multiple-choice",
-      question: "What is the term for the process of forming new species?",
-      options: ["Speciation", "Natural selection", "Mutation", "Adaptation"],
-      answer: "Speciation",
-    },
-    {
-      type: "multiple-choice",
-      question: "What is the term for the process of forming new species?",
-      options: ["Speciation", "Natural selection", "Mutation", "Adaptation"],
-      answer: "Speciation",
+      question:
+        "The ridge running across the top of the skull for jaw muscle attachment is called the...",
+      options: [
+        "Sagittal crest",
+        "Occipital bone",
+        "Temporal ridge",
+        "Cranial ridge",
+      ],
+      answer: "Sagittal crest",
     },
   ],
+
   NervousSystem: [
     {
       type: "multiple-choice",
@@ -1531,57 +1660,239 @@ const fillInBlankQuestions = {
   Genetics: [
     {
       type: "fill-in-blank",
-      question: "The genetic makeup of an organism is called its ____.",
-      answer: "genotype",
-    },
-    {
-      type: "flll-in-blank",
-      question: "The physical expression of a gene is called its ____.",
-      answer: "phenotype",
+      question:
+        "A segment of DNA that contains the code for a particular characteristic is called a __________.",
+      answer: "Gene",
     },
     {
       type: "fill-in-blank",
-      question: "A variant form of a gene is called an ____.",
-      answer: "allele",
+      question:
+        "Different forms of a gene that occur at the same locus are called __________.",
+      answer: "Alleles",
     },
     {
       type: "fill-in-blank",
-      question: "The process of forming gametes is called ____.",
-      answer: "meiosis",
+      question:
+        "The physical expression of a genetic trait is called the __________.",
+      answer: "Phenotype",
     },
     {
       type: "fill-in-blank",
-      question: "The principle of independent assortment was proposed by ____.",
-      answer: "Mendel",
+      question: "The genetic makeup of an organism is called its __________.",
+      answer: "Genotype",
+    },
+    {
+      type: "fill-in-blank",
+      question:
+        "The location of a gene on a chromosome is called a __________.",
+      answer: "Locus",
+    },
+    {
+      type: "fill-in-blank",
+      question:
+        "A condition in which both alleles are the same is called __________.",
+      answer: "Homozygous",
+    },
+    {
+      type: "fill-in-blank",
+      question:
+        "A condition in which two different alleles are present is called __________.",
+      answer: "Heterozygous",
+    },
+    {
+      type: "fill-in-blank",
+      question:
+        "The process of producing genetically identical organisms using biotechnology is called __________.",
+      answer: "Cloning",
+    },
+    {
+      type: "fill-in-blank",
+      question:
+        "The manipulation of the genetic material of an organism to obtain desired changes is called __________.",
+      answer: "Genetic engineering",
+    },
+    {
+      type: "fill-in-blank",
+      question:
+        "Mapping of all the genes in the human chromosomes is known as the __________.",
+      answer: "Human Genome Project",
+    },
+    {
+      type: "fill-in-blank",
+      question:
+        "A change in a population’s genes over generations is called __________.",
+      answer: "Evolution",
+    },
+    {
+      type: "fill-in-blank",
+      question:
+        "A genetic cross involving one trait is called a __________ cross.",
+      answer: "Monohybrid",
+    },
+    {
+      type: "fill-in-blank",
+      question:
+        "A genetic cross involving two traits is called a __________ cross.",
+      answer: "Dihybrid",
+    },
+    {
+      type: "fill-in-blank",
+      question:
+        "The process by which organisms with advantageous traits survive and reproduce is __________.",
+      answer: "Natural selection",
+    },
+    {
+      type: "fill-in-blank",
+      question:
+        "A set of one maternal and one paternal chromosome that pair up during meiosis are called __________ chromosomes.",
+      answer: "Homologous",
+    },
+    {
+      type: "fill-in-blank",
+      question:
+        "A permanent change in the DNA sequence of a gene is called a __________.",
+      answer: "Mutation",
+    },
+    {
+      type: "fill-in-blank",
+      question:
+        "The diagram used to predict genetic outcomes of a cross is called a __________ square.",
+      answer: "Punnett",
+    },
+    {
+      type: "fill-in-blank",
+      question:
+        "The science that studies heredity and variation is called __________.",
+      answer: "Genetics",
+    },
+    {
+      type: "fill-in-blank",
+      question:
+        "When both alleles contribute to the phenotype in equal measure, it is called __________.",
+      answer: "Co-dominance",
+    },
+    {
+      type: "fill-in-blank",
+      question:
+        "An allele that is masked in the heterozygous condition is called __________.",
+      answer: "Recessive",
     },
   ],
 
   Evolution: [
     {
       type: "fill-in-blank",
-      question: "The process of change in species over time is called ____.",
-      answer: "evolution",
-    },
-    {
-      type: "fill-in-blank",
-      question: "The theory of natural selection was proposed by ____.",
-      answer: "Darwin",
+      question:
+        "The process by which species change over generations is called __________.",
+      answer: "Evolution",
     },
     {
       type: "fill-in-blank",
       question:
-        "Structures that have a similar origin but different functions are called ____.",
-      answer: "homologous structures",
+        "Darwin’s theory of evolution is based on the idea of __________.",
+      answer: "Natural selection",
     },
     {
       type: "fill-in-blank",
-      question: "The process by which new species are formed is called ____.",
-      answer: "speciation",
+      question: "The formation of new species is known as __________.",
+      answer: "Speciation",
     },
     {
       type: "fill-in-blank",
-      question: "The study of fossils to understand evolution is called ____.",
-      answer: "paleontology",
+      question:
+        "Speciation caused by geographical barriers is called __________ speciation.",
+      answer: "Allopatric",
+    },
+    {
+      type: "fill-in-blank",
+      question:
+        "A change in the genetic composition of a population over time is called __________.",
+      answer: "Evolution",
+    },
+    {
+      type: "fill-in-blank",
+      question:
+        "Human-driven selection for desirable traits is called __________ selection.",
+      answer: "Artificial",
+    },
+    {
+      type: "fill-in-blank",
+      question:
+        "When individuals that are closely related mate, it is known as __________.",
+      answer: "Inbreeding",
+    },
+    {
+      type: "fill-in-blank",
+      question:
+        "When individuals that are not closely related mate, it is known as __________.",
+      answer: "Outbreeding",
+    },
+    {
+      type: "fill-in-blank",
+      question:
+        "The mechanism that prevents two species from interbreeding is called __________ isolation.",
+      answer: "Reproductive",
+    },
+    {
+      type: "fill-in-blank",
+      question: "The group that includes humans and apes is called __________.",
+      answer: "Hominids",
+    },
+    {
+      type: "fill-in-blank",
+      question:
+        "The subgroup that includes only modern humans and their ancestors is called __________.",
+      answer: "Hominins",
+    },
+    {
+      type: "fill-in-blank",
+      question: "The scientific name of modern humans is __________.",
+      answer: "Homo sapiens",
+    },
+    {
+      type: "fill-in-blank",
+      question: "The ability to walk on two legs is called __________.",
+      answer: "Bipedalism",
+    },
+    {
+      type: "fill-in-blank",
+      question:
+        "The hole in the base of the skull through which the spinal cord passes is called the __________.",
+      answer: "Foramen magnum",
+    },
+    {
+      type: "fill-in-blank",
+      question:
+        "The ridge on the top of the skull for attachment of jaw muscles is called the __________.",
+      answer: "Sagittal crest",
+    },
+    {
+      type: "fill-in-blank",
+      question:
+        "The branch of biology that studies evolutionary relationships among species is called __________.",
+      answer: "Phylogenetics",
+    },
+    {
+      type: "fill-in-blank",
+      question:
+        "The biological group that includes lemurs, monkeys, apes, and humans is called __________.",
+      answer: "Primates",
+    },
+    {
+      type: "fill-in-blank",
+      question: "A jaw that projects outward is described as __________.",
+      answer: "Prognathous",
+    },
+    {
+      type: "fill-in-blank",
+      question:
+        "The structure that shows evolutionary history among organisms is a __________.",
+      answer: "Cladogram",
+    },
+    {
+      type: "fill-in-blank",
+      question: "The Latin term 'Homo' means __________.",
+      answer: "Human",
     },
   ],
 
