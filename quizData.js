@@ -1083,210 +1083,127 @@ const questions = {
   ],
 
   NervousSystem: [
-    {
-      type: "multiple-choice",
-      question: "What is the basic unit of the nervous system?",
-      options: ["Neuron", "Hormone", "Gland", "Muscle"],
-      answer: "Neuron",
-    },
-    {
-      type: "multiple-choice",
-      question: "Which part of the neuron receives signals?",
-      options: ["Dendrite", "Axon", "Cell body", "Synapse"],
-      answer: "Dendrite",
-    },
-    {
-      type: "multiple-choice",
-      question: "What is the function of the myelin sheath?",
-      options: [
-        "Speed up nerve impulses",
-        "Produce neurotransmitters",
-        "Receive signals",
-        "Store energy",
-      ],
-      answer: "Speed up nerve impulses",
-    },
-    {
-      type: "multiple-choice",
-      question: "Which part of the brain controls voluntary movements?",
-      options: ["Cerebrum", "Cerebellum", "Medulla oblongata", "Hypothalamus"],
-      answer: "Cerebrum",
-    },
-    {
-      type: "multiple-choice",
-      question: "What is the role of the cerebellum?",
-      options: [
-        "Balance and coordination",
-        "Memory and learning",
-        "Breathing and heart rate",
-        "Emotions and behavior",
-      ],
-      answer: "Balance and coordination",
-    },
-    {
-      type: "multiple-choice",
-      question:
-        "Which part of the nervous system controls involuntary actions?",
-      options: [
-        "Somatic nervous system",
-        "Autonomic nervous system",
-        "Central nervous system",
-        "Peripheral nervous system",
-      ],
-      answer: "Autonomic nervous system",
-    },
-    {
-      type: "multiple-choice",
-      question: "What is the function of the medulla oblongata?",
-      options: [
-        "Control breathing and heart rate",
-        "Control balance and coordination",
-        "Control memory and learning",
-        "Control emotions and behavior",
-      ],
-      answer: "Control breathing and heart rate",
-    },
-    {
-      type: "multiple-choice",
-      question: "What is the role of the hypothalamus?",
-      options: [
-        "Regulate body temperature",
-        "Control balance and coordination",
-        "Control memory and learning",
-        "Control emotions and behavior",
-      ],
-      answer: "Regulate body temperature",
-    },
-    {
-      type: "multiple-choice",
-      question: "What is the function of the synapse?",
-      options: [
-        "Transmit signals between neurons",
-        "Produce neurotransmitters",
-        "Receive signals",
-        "Store energy",
-      ],
-      answer: "Transmit signals between neurons",
-    },
-    {
-      type: "multiple-choice",
-      question: "What is the role of neurotransmitters?",
-      options: [
-        "Transmit signals across synapses",
-        "Produce myelin",
-        "Receive signals",
-        "Store energy",
-      ],
-      answer: "Transmit signals across synapses",
-    },
-    {
-      type: "multiple-choice",
-      question:
-        "Which neurotransmitter is associated with pleasure and reward?",
-      options: ["Dopamine", "Serotonin", "Acetylcholine", "GABA"],
-      answer: "Dopamine",
-    },
-    {
-      type: "multiple-choice",
-      question: "What is the function of the peripheral nervous system?",
-      options: [
-        "Connect the central nervous system to the rest of the body",
-        "Control involuntary actions",
-        "Control balance and coordination",
-        "Control memory and learning",
-      ],
-      answer: "Connect the central nervous system to the rest of the body",
-    },
-    {
-      type: "multiple-choice",
-      question: "What is the role of the spinal cord?",
-      options: [
-        "Transmit signals between the brain and the body",
-        "Control balance and coordination",
-        "Control memory and learning",
-        "Control emotions and behavior",
-      ],
-      answer: "Transmit signals between the brain and the body",
-    },
-    {
-      type: "multiple-choice",
-      question: "What is the function of the autonomic nervous system?",
-      options: [
-        "Control involuntary actions",
-        "Control voluntary actions",
-        "Control balance and coordination",
-        "Control memory and learning",
-      ],
-      answer: "Control involuntary actions",
-    },
-    {
-      type: "multiple-choice",
-      question: "What is the role of the somatic nervous system?",
-      options: [
-        "Control voluntary actions",
-        "Control involuntary actions",
-        "Control balance and coordination",
-        "Control memory and learning",
-      ],
-      answer: "Control voluntary actions",
-    },
-    {
-      type: "multiple-choice",
-      question: "What is the function of the central nervous system?",
-      options: [
-        "Process and transmit information",
-        "Control balance and coordination",
-        "Control memory and learning",
-        "Control emotions and behavior",
-      ],
-      answer: "Process and transmit information",
-    },
-    {
-      type: "multiple-choice",
-      question: "What is the role of the reflex arc?",
-      options: [
-        "Provide a rapid response to stimuli",
-        "Control balance and coordination",
-        "Control memory and learning",
-        "Control emotions and behavior",
-      ],
-      answer: "Provide a rapid response to stimuli",
-    },
-    {
-      type: "multiple-choice",
-      question: "What is the function of the sensory neurons?",
-      options: [
-        "Transmit signals from sensory receptors to the central nervous system",
-        "Transmit signals from the central nervous system to muscles",
-        "Control balance and coordination",
-        "Control memory and learning",
-      ],
-      answer:
-        "Transmit signals from sensory receptors to the central nervous system",
-    },
-    {
-      type: "multiple-choice",
-      question: "What is the role of motor neurons?",
-      options: [
-        "Transmit signals from the central nervous system to muscles",
-        "Transmit signals from sensory receptors to the central nervous system",
-        "Control balance and coordination",
-        "Control memory and learning",
-      ],
-      answer: "Transmit signals from the central nervous system to muscles",
-    },
-    {
-      type: "multiple-choice",
-      question: "What is the function of interneurons?",
-      options: [
-        "Transmit signals between neurons",
-        "Transmit signals from sensory receptors to the central nervous system",
-        "Transmit signals from the central nervous system to muscles",
-        "Control balance and coordination",
-      ],
-      answer: "Transmit signals between neurons",
-    },
-  ],
+  {
+    type: "multiple-choice",
+    question: "The part of the brain that receives impulses from the maculae is the...",
+    options: ["Cerebellum", "Medulla oblongata", "Cerebrum", "Hypothalamus"],
+    answer: "Cerebellum",
+  },
+  {
+    type: "multiple-choice",
+    question: "The structure that connects the left and right hemispheres of the brain is called the...",
+    options: ["Corpus callosum", "Medulla oblongata", "Thalamus", "Cerebrum"],
+    answer: "Corpus callosum",
+  },
+  {
+    type: "multiple-choice",
+    question: "The part of the brain that controls body temperature is the...",
+    options: ["Hypothalamus", "Cerebellum", "Medulla oblongata", "Thalamus"],
+    answer: "Hypothalamus",
+  },
+  {
+    type: "multiple-choice",
+    question: "The branch of the autonomic nervous system that restores an increased heart rate back to normal is the...",
+    options: ["Parasympathetic nervous system", "Sympathetic nervous system", "Central nervous system", "Peripheral nervous system"],
+    answer: "Parasympathetic nervous system",
+  },
+  {
+    type: "multiple-choice",
+    question: "The part of the nervous system made up of spinal and cranial nerves is the...",
+    options: ["Peripheral nervous system", "Central nervous system", "Autonomic nervous system", "Somatic nervous system"],
+    answer: "Peripheral nervous system",
+  },
+  {
+    type: "multiple-choice",
+    question: "The functional gap between two consecutive neurons is called a...",
+    options: ["Synapse", "Axon", "Dendrite", "Impulse gap"],
+    answer: "Synapse",
+  },
+  {
+    type: "multiple-choice",
+    question: "The membranes that surround the brain and spinal cord are collectively called the...",
+    options: ["Meninges", "Cranium", "Neurons", "Pia mater"],
+    answer: "Meninges",
+  },
+  {
+    type: "multiple-choice",
+    question: "The part of the skull that protects the brain is the...",
+    options: ["Cranium", "Meninges", "Cerebrum", "Occipital lobe"],
+    answer: "Cranium",
+  },
+  {
+    type: "multiple-choice",
+    question: "The part of the brain that regulates breathing is the...",
+    options: ["Medulla oblongata", "Cerebrum", "Cerebellum", "Hypothalamus"],
+    answer: "Medulla oblongata",
+  },
+  {
+    type: "multiple-choice",
+    question: "A disease characterised by degeneration of brain tissue leading to memory loss is...",
+    options: ["Alzheimer’s disease", "Parkinson’s disease", "Epilepsy", "Multiple sclerosis"],
+    answer: "Alzheimer’s disease",
+  },
+  {
+    type: "multiple-choice",
+    question: "The part of a neuron that speeds up the transmission of an impulse is the...",
+    options: ["Myelin sheath", "Axon", "Dendrite", "Synapse"],
+    answer: "Myelin sheath",
+  },
+  {
+    type: "multiple-choice",
+    question: "A disorder of the nervous system characterised by degeneration of neurons is...",
+    options: ["Multiple sclerosis", "Alzheimer’s disease", "Stroke", "Epilepsy"],
+    answer: "Multiple sclerosis",
+  },
+  {
+    type: "multiple-choice",
+    question: "The part of the brain that controls heart rate is the...",
+    options: ["Medulla oblongata", "Cerebellum", "Cerebrum", "Hypothalamus"],
+    answer: "Medulla oblongata",
+  },
+  {
+    type: "multiple-choice",
+    question: "The pigmented layer of the eye that absorbs excess light is the...",
+    options: ["Choroid", "Retina", "Cornea", "Sclera"],
+    answer: "Choroid",
+  },
+  {
+    type: "multiple-choice",
+    question: "The watery fluid that supports the cornea and the front chamber of the eye is the...",
+    options: ["Aqueous humour", "Vitreous humour", "Lacrimal fluid", "Tear fluid"],
+    answer: "Aqueous humour",
+  },
+  {
+    type: "multiple-choice",
+    question: "The defect where near objects are seen clearly but distant ones appear blurred is called...",
+    options: ["Myopia", "Hypermetropia", "Astigmatism", "Cataract"],
+    answer: "Myopia",
+  },
+  {
+    type: "multiple-choice",
+    question: "The visual defect caused by a cloudy lens is called...",
+    options: ["Cataract", "Myopia", "Glaucoma", "Astigmatism"],
+    answer: "Cataract",
+  },
+  {
+    type: "multiple-choice",
+    question: "The area of the retina with the highest concentration of cones is the...",
+    options: ["Yellow spot (fovea)", "Blind spot", "Cornea", "Iris"],
+    answer: "Yellow spot (fovea)",
+  },
+  {
+    type: "multiple-choice",
+    question: "Photoreceptors responsible for vision in dim light are called...",
+    options: ["Rods", "Cones", "Maculae", "Optic nerves"],
+    answer: "Rods",
+  },
+  {
+    type: "multiple-choice",
+    question: "The small tubes inserted in the ear to drain fluids from a middle-ear infection are called...",
+    options: ["Grommets", "Ossicles", "Cochlear tubes", "Round windows"],
+    answer: "Grommets",
+  }
+    ],
   EndocrineSystem: [
     {
       type: "multiple-choice",
@@ -1657,6 +1574,108 @@ const questions = {
 
 // Sample Questions (Fill in the Blank)
 const fillInBlankQuestions = {
+  NervousSystem: [
+  {
+    type: "fill-in-blank",
+    question: "The structure that connects the left and right hemispheres of the brain is the __________.",
+    answer: "Corpus callosum",
+  },
+  {
+    type: "fill-in-blank",
+    question: "The branch of the autonomic nervous system that restores normal heart rate after stress is the __________ system.",
+    answer: "Parasympathetic",
+  },
+  {
+    type: "fill-in-blank",
+    question: "The functional gap between two neurons is called a __________.",
+    answer: "Synapse",
+  },
+  {
+    type: "fill-in-blank",
+    question: "The membranes that protect the brain and spinal cord are called the __________.",
+    answer: "Meninges",
+  },
+  {
+    type: "fill-in-blank",
+    question: "The part of the brain that regulates breathing and heart rate is the __________.",
+    answer: "Medulla oblongata",
+  },
+  {
+    type: "fill-in-blank",
+    question: "The outermost membrane that surrounds and protects the brain is called the __________.",
+    answer: "Dura mater",
+  },
+  {
+    type: "fill-in-blank",
+    question: "The watery fluid that supports the cornea and front chamber of the eye is the __________.",
+    answer: "Aqueous humour",
+  },
+  {
+    type: "fill-in-blank",
+    question: "The jelly-like substance that maintains the shape of the eye is the __________.",
+    answer: "Vitreous humour",
+  },
+  {
+    type: "fill-in-blank",
+    question: "The process by which the lens changes shape to focus on near or far objects is called __________.",
+    answer: "Accommodation",
+  },
+  {
+    type: "fill-in-blank",
+    question: "The defect of the eye caused by uneven curvature of the lens or cornea is called __________.",
+    answer: "Astigmatism",
+  },
+  {
+    type: "fill-in-blank",
+    question: "The nerve that carries impulses from the retina to the brain is the __________ nerve.",
+    answer: "Optic",
+  },
+  {
+    type: "fill-in-blank",
+    question: "The part of the ear that equalises air pressure on both sides of the tympanic membrane is the __________.",
+    answer: "Eustachian tube",
+  },
+  {
+    type: "fill-in-blank",
+    question: "The part of the ear that absorbs excess pressure waves from the cochlea is the __________.",
+    answer: "Round window",
+  },
+  {
+    type: "fill-in-blank",
+    question: "The ossicle that transfers vibrations to the oval window is the __________.",
+    answer: "Stapes",
+  },
+  {
+    type: "fill-in-blank",
+    question: "The part of the ear that receives sound waves from the auditory canal is the __________.",
+    answer: "Tympanic membrane",
+  },
+  {
+    type: "fill-in-blank",
+    question: "The structure in the inner ear that contains receptors for hearing is the __________.",
+    answer: "Organ of Corti",
+  },
+  {
+    type: "fill-in-blank",
+    question: "The receptors in the ear that detect changes in body position and movement are located in the __________ canals.",
+    answer: "Semicircular",
+  },
+  {
+    type: "fill-in-blank",
+    question: "The type of vision in which both eyes are used together to focus on an object is called __________ vision.",
+    answer: "Binocular",
+  },
+  {
+    type: "fill-in-blank",
+    question: "The part of the brain that receives impulses from the maculae to maintain balance is the __________.",
+    answer: "Cerebellum",
+  },
+  {
+    type: "fill-in-blank",
+    question: "The part of the brain that controls body temperature is the __________.",
+    answer: "Hypothalamus",
+  }
+],
   Genetics: [
     {
       type: "fill-in-blank",
