@@ -1205,198 +1205,163 @@ const questions = {
   }
     ],
   EndocrineSystem: [
-    {
-      type: "multiple-choice",
-      question: "What is the function of the endocrine system?",
-      options: [
-        "Regulate body functions using hormones",
-        "Control voluntary movements",
-        "Control balance and coordination",
-        "Control memory and learning",
-      ],
-      answer: "Regulate body functions using hormones",
-    },
-    {
-      type: "multiple-choice",
-      question: "Which gland is known as the 'master gland'?",
-      options: [
-        "Pituitary gland",
-        "Thyroid gland",
-        "Adrenal gland",
-        "Pancreas",
-      ],
-      answer: "Pituitary gland",
-    },
-    {
-      type: "multiple-choice",
-      question: "What is the role of insulin?",
-      options: [
-        "Regulate blood sugar levels",
-        "Regulate metabolism",
-        "Regulate calcium levels",
-        "Regulate stress response",
-      ],
-      answer: "Regulate blood sugar levels",
-    },
-    {
-      type: "multiple-choice",
-      question: "Which hormone is produced by the thyroid gland?",
-      options: ["Thyroxine", "Insulin", "Adrenaline", "Estrogen"],
-      answer: "Thyroxine",
-    },
-    {
-      type: "multiple-choice",
-      question: "What is the function of adrenaline?",
-      options: [
-        "Prepare the body for 'fight or flight'",
-        "Regulate blood sugar levels",
-        "Regulate metabolism",
-        "Regulate calcium levels",
-      ],
-      answer: "Prepare the body for 'fight or flight'",
-    },
-    {
-      type: "multiple-choice",
-      question: "Which gland produces cortisol?",
-      options: [
-        "Adrenal gland",
-        "Thyroid gland",
-        "Pituitary gland",
-        "Pancreas",
-      ],
-      answer: "Adrenal gland",
-    },
-    {
-      type: "multiple-choice",
-      question: "What is the role of the pancreas in the endocrine system?",
-      options: [
-        "Produce insulin and glucagon",
-        "Produce thyroxine",
-        "Produce adrenaline",
-        "Produce estrogen",
-      ],
-      answer: "Produce insulin and glucagon",
-    },
-    {
-      type: "multiple-choice",
-      question: "What is homeostasis?",
-      options: [
-        "Maintenance of a stable internal environment",
-        "Control of voluntary movements",
-        "Control of balance and coordination",
-        "Control of memory and learning",
-      ],
-      answer: "Maintenance of a stable internal environment",
-    },
-    {
-      type: "multiple-choice",
-      question: "Which hormone regulates calcium levels in the blood?",
-      options: ["Parathyroid hormone", "Insulin", "Adrenaline", "Thyroxine"],
-      answer: "Parathyroid hormone",
-    },
-    {
-      type: "multiple-choice",
-      question: "What is the role of the hypothalamus in the endocrine system?",
-      options: [
-        "Link between the nervous and endocrine systems",
-        "Produce insulin",
-        "Produce thyroxine",
-        "Produce adrenaline",
-      ],
-      answer: "Link between the nervous and endocrine systems",
-    },
-    {
-      type: "multiple-choice",
-      question:
-        "Which hormone is responsible for regulating sleep-wake cycles?",
-      options: ["Melatonin", "Insulin", "Adrenaline", "Thyroxine"],
-      answer: "Melatonin",
-    },
-    {
-      type: "multiple-choice",
-      question: "What is the function of the thyroid gland?",
-      options: [
-        "Regulate metabolism",
-        "Regulate blood sugar levels",
-        "Regulate calcium levels",
-        "Regulate stress response",
-      ],
-      answer: "Regulate metabolism",
-    },
-    {
-      type: "multiple-choice",
-      question: "Which hormone is produced by the ovaries?",
-      options: ["Estrogen", "Testosterone", "Adrenaline", "Thyroxine"],
-      answer: "Estrogen",
-    },
-    {
-      type: "multiple-choice",
-      question: "What is the role of the adrenal glands?",
-      options: [
-        "Produce adrenaline and cortisol",
-        "Produce insulin",
-        "Produce thyroxine",
-        "Produce estrogen",
-      ],
-      answer: "Produce adrenaline and cortisol",
-    },
-    {
-      type: "multiple-choice",
-      question:
-        "Which hormone is responsible for regulating water balance in the body?",
-      options: [
-        "Antidiuretic hormone (ADH)",
-        "Insulin",
-        "Adrenaline",
-        "Thyroxine",
-      ],
-      answer: "Antidiuretic hormone (ADH)",
-    },
-    {
-      type: "multiple-choice",
-      question: "What is the function of the parathyroid glands?",
-      options: [
-        "Regulate calcium levels",
-        "Regulate blood sugar levels",
-        "Regulate metabolism",
-        "Regulate stress response",
-      ],
-      answer: "Regulate calcium levels",
-    },
-    {
-      type: "multiple-choice",
-      question: "Which hormone is produced by the testes?",
-      options: ["Testosterone", "Estrogen", "Adrenaline", "Thyroxine"],
-      answer: "Testosterone",
-    },
-    {
-      type: "multiple-choice",
-      question: "What is the role of glucagon?",
-      options: [
-        "Increase blood sugar levels",
-        "Decrease blood sugar levels",
-        "Regulate metabolism",
-        "Regulate calcium levels",
-      ],
-      answer: "Increase blood sugar levels",
-    },
-    {
-      type: "multiple-choice",
-      question: "Which hormone is responsible for regulating growth?",
-      options: ["Growth hormone", "Insulin", "Adrenaline", "Thyroxine"],
-      answer: "Growth hormone",
-    },
-    {
-      type: "multiple-choice",
-      question: "What is the function of the pineal gland?",
-      options: [
-        "Produce melatonin",
-        "Produce insulin",
-        "Produce thyroxine",
-        "Produce adrenaline",
-      ],
-      answer: "Produce melatonin",
-    },
+  {
+    type: "multiple-choice",
+    question: "The system responsible for chemical coordination in the body is the...",
+    options: ["Endocrine system", "Nervous system", "Circulatory system", "Respiratory system"],
+    answer: "Endocrine system",
+  },
+  {
+    type: "multiple-choice",
+    question: "A gland whose secretions are transported through ducts is called a...",
+    options: ["Exocrine gland", "Endocrine gland", "Adrenal gland", "Pituitary gland"],
+    answer: "Exocrine gland",
+  },
+  {
+    type: "multiple-choice",
+    question: "A gland whose secretions are transported through the bloodstream is called a...",
+    options: ["Endocrine gland", "Exocrine gland", "Salivary gland", "Sebaceous gland"],
+    answer: "Endocrine gland",
+  },
+  {
+    type: "multiple-choice",
+    question: "The hormone that stimulates mammary glands to produce milk is...",
+    options: ["Prolactin", "Oxytocin", "Progesterone", "FSH"],
+    answer: "Prolactin",
+  },
+  {
+    type: "multiple-choice",
+    question: "The hormone responsible for osmoregulation in the body is...",
+    options: ["ADH (Antidiuretic hormone)", "Aldosterone", "Insulin", "Cortisol"],
+    answer: "ADH (Antidiuretic hormone)",
+  },
+  {
+    type: "multiple-choice",
+    question: "Specialized cells in the pancreas that secrete insulin and glucagon are called...",
+    options: ["Islets of Langerhans", "Beta cells", "Alpha cells", "Nephrons"],
+    answer: "Islets of Langerhans",
+  },
+  {
+    type: "multiple-choice",
+    question: "The hormone responsible for secondary sexual characteristics in males is...",
+    options: ["Testosterone", "Progesterone", "Oestrogen", "FSH"],
+    answer: "Testosterone",
+  },
+  {
+    type: "multiple-choice",
+    question: "The hormone that helps maintain salt balance in the body is...",
+    options: ["Aldosterone", "ADH", "Insulin", "Cortisol"],
+    answer: "Aldosterone",
+  },
+  {
+    type: "multiple-choice",
+    question: "The gland that secretes FSH and LH in females is the...",
+    options: ["Pituitary gland", "Ovary", "Thyroid gland", "Adrenal gland"],
+    answer: "Pituitary gland",
+  },
+  {
+    type: "multiple-choice",
+    question: "Chemical messengers produced by endocrine glands are called...",
+    options: ["Hormones", "Enzymes", "Neurotransmitters", "Proteins"],
+    answer: "Hormones",
+  },
+  {
+    type: "multiple-choice",
+    question: "The gland located in the neck that secretes thyroxin is the...",
+    options: ["Thyroid gland", "Adrenal gland", "Pituitary gland", "Parathyroid gland"],
+    answer: "Thyroid gland",
+  },
+  {
+    type: "multiple-choice",
+    question: "The hormone that controls metabolic rate is...",
+    options: ["Thyroxin", "Insulin", "Cortisol", "Adrenaline"],
+    answer: "Thyroxin",
+  },
+  {
+    type: "multiple-choice",
+    question: "The hormone responsible for growth and development is...",
+    options: ["Growth hormone", "Thyroxin", "Insulin", "Oestrogen"],
+    answer: "Growth hormone",
+  },
+  {
+    type: "multiple-choice",
+    question: "The hormone that prepares the body for emergencies is...",
+    options: ["Adrenaline", "Thyroxin", "Aldosterone", "FSH"],
+    answer: "Adrenaline",
+  },
+  {
+    type: "multiple-choice",
+    question: "The mechanism that detects and corrects internal imbalances is called...",
+    options: ["Negative feedback", "Positive feedback", "Homeostasis", "Coordination"],
+    answer: "Negative feedback",
+  },
+  {
+    type: "multiple-choice",
+    question: "The hormone that stimulates follicle development in the ovary is...",
+    options: ["FSH", "LH", "Progesterone", "Oestrogen"],
+    answer: "FSH",
+  },
+  {
+    type: "multiple-choice",
+    question: "The hormone that promotes secretion of thyroid hormones is...",
+    options: ["TSH", "FSH", "LH", "GH"],
+    answer: "TSH",
+  },
+  {
+    type: "multiple-choice",
+    question: "The hormone that lowers blood glucose levels is...",
+    options: ["Insulin", "Glucagon", "Adrenaline", "Thyroxin"],
+    answer: "Insulin",
+  },
+  {
+    type: "multiple-choice",
+    question: "The hormone that raises blood glucose levels is...",
+    options: ["Glucagon", "Insulin", "Adrenaline", "Cortisol"],
+    answer: "Glucagon",
+  },
+  {
+    type: "multiple-choice",
+    question: "The hormone that maintains pregnancy is...",
+    options: ["Progesterone", "Oestrogen", "FSH", "LH"],
+    answer: "Progesterone",
+  },
+  {
+    type: "multiple-choice",
+    question: "The hormone that is in excess in a person that grows abnormally tall is...",
+    options: ["Growth hormone", "Thyroxin", "Cortisol", "Adrenaline"],
+    answer: "Growth hormone",
+  },
+  {
+    type: "multiple-choice",
+    question: "The hormone that controls the salt content in a human body is...",
+    options: ["Aldosterone", "ADH", "Cortisol", "Insulin"],
+    answer: "Aldosterone",
+  },
+  {
+    type: "multiple-choice",
+    question: "The state of the blood vessels in the skin when environmental temperature is high is...",
+    options: ["Vasodilation", "Vasoconstriction", "Osmoregulation", "Thermogenesis"],
+    answer: "Vasodilation",
+  },
+  {
+    type: "multiple-choice",
+    question: "An excess of carbon dioxide in the blood may cause a decrease in the blood’s...",
+    options: ["pH", "Oxygen level", "Temperature", "Glucose level"],
+    answer: "pH",
+  },
+  {
+    type: "multiple-choice",
+    question: "Which organ acts as both an endocrine and an exocrine gland?",
+    options: ["Pancreas", "Liver", "Kidney", "Thyroid"],
+    answer: "Pancreas",
+  },
+  {
+    type: "multiple-choice",
+    question: "The part of the brain responsible for thermoregulation is the...",
+    options: ["Hypothalamus", "Medulla oblongata", "Cerebellum", "Cerebrum"],
+    answer: "Hypothalamus",
+  }
+
   ],
   Plants: [
     {
@@ -2338,5 +2303,37 @@ const fillInBlankQuestions = {
         "The lower neck of the uterus that opens into the vagina is called the __________.",
       answer: "cervix",
     },
+  ],
+  EndocrineSystem: [
+  {
+    type: "fill-in-blank",
+    question: "The hormone that is in excess in a person that grows abnormally tall is __________.",
+    answer: "Growth hormone",
+  },
+  {
+    type: "fill-in-blank",
+    question: "A hormone that controls the salt content in the body is __________.",
+    answer: "Aldosterone",
+  },
+  {
+    type: "fill-in-blank",
+    question: "The state of the blood vessels in the skin when the environmental temperature is high is __________.",
+    answer: "Vasodilation",
+  },
+  {
+    type: "fill-in-blank",
+    question: "An excess of carbon dioxide may cause a decrease in the __________ of the blood.",
+    answer: "pH",
+  },
+  {
+    type: "fill-in-blank",
+    question: "The organ that acts as both an endocrine and exocrine gland is the __________.",
+    answer: "Pancreas",
+  },
+  {
+    type: "fill-in-blank",
+    question: "The part of the brain responsible for thermoregulation is the __________.",
+    answer: "Hypothalamus",
+  }
   ],
 };
