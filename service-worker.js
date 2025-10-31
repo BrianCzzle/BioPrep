@@ -9,8 +9,8 @@ const urlsToCache = [
   "/script.js",
 
   // 👉 Add icons
-  "/icons/icon 192.png",
-  "/icons/icon 512.png"
+  "/icons/icon-192.png",
+  "/icons/icon-512.png"
 
   // 👉 Add any images/resources you want offline
   // "/resources/dna-paper1.pdf",
