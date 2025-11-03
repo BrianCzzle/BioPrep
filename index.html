@@ -16,56 +16,141 @@
   <div class="container">
     <!-- Header -->
     <header>
-      <h1>BioPrep</h1>
-      <div class="user-info">
-        <div>Welcome, learner!</div>
-        <div class="streak">
-          <i class="fas fa-fire"></i>
-          <span>3-day streak</span>
+      <div class="header-content" style="display: flex; flex-direction: column; align-items: center; padding: 2rem 0;">
+        <div class="logo-section" style="display: flex; flex-direction: column; align-items: center;">
+          <img src="Life Sciences App Logo_ BioPrep.png" alt="BioPrep Logo" class="logo-img"
+            style="width: 100px; height: 100px; object-fit: contain; margin-bottom: 0.5rem;">
+          <h1 style="margin: 0;">BioPrep</h1>
+          <p class="tagline" style="margin-top: 0.5rem;">Life Sciences Learning Platform</p>
+        </div>
+        <div class="user-section" style="margin-top: 1.5rem;">
+          <div class="welcome-message" style="text-align: center;">
+            <div class="greeting">Welcome back,</div>
+            <div class="username">Learner!</div>
+          </div>
+          <!-- Streak and avatar centered below welcome message -->
+          <div class="streak-container"
+            style="display: flex; align-items: center; justify-content: center; margin-top: 1rem;">
+            <div class="streak" style="display: flex; align-items: center;">
+              <div class="streak-icon" style="margin-right: 0.5rem;">
+                <i class="fas fa-fire"></i>
+              </div>
+              <div class="streak-info">
+                <div class="streak-count">3-day streak</div>
+                <div class="streak-progress">
+                  <div class="streak-bar" style="width: 60px; height: 6px; background: #eee; border-radius: 3px;">
+                    <div class="streak-fill" style="width: 60%; height: 100%; background: #ff9800; border-radius: 3px;">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="user-avatar" style="margin-left: 1rem;">
+              <i class="fas fa-user-graduate"></i>
+            </div>
+          </div>
         </div>
       </div>
     </header>
 
     <section class="dashboard">
-      <div class="welcome-card">
-        <h2>Continue Your Learning</h2>
-        <p>You're making great progress in your Life Sciences studies. Keep it up!</p>
+      <section class="dashboard">
+        <div class="welcome-card">
+          <div class="welcome-header">
+            <div class="welcome-text">
+              <h2>Continue Your Learning Journey</h2>
+              <p>You're making excellent progress in your Life Sciences studies. Your dedication is paying off!</p>
+            </div>
+            <div class="achievement-badge">
+              <i class="fas fa-trophy"></i>
+            </div>
+          </div>
 
-        <div class="stats-grid">
-          <div class="stat-card">
-            <h3>72%</h3>
-            <p>Average Score</p>
-          </div>
-          <div class="stat-card">
-            <h3>42</h3>
-            <p>Quizzes Completed</p>
-          </div>
-          <div class="stat-card">
-            <h3>5</h3>
-            <p>Topics Mastered</p>
-          </div>
-          <div class="stat-card">
-            <h3>8</h3>
-            <p>Hours Studied</p>
+          <div class="stats-grid">
+            <div class="stat-card">
+              <div class="stat-icon">
+                <i class="fas fa-chart-line"></i>
+              </div>
+              <div class="stat-content">
+                <h3>72%</h3>
+                <p>Average Score</p>
+                <div class="progress-indicator">
+                  <div class="progress-bar">
+                    <div class="progress-fill" style="width: 72%"></div>
+                  </div>
+                  <span class="progress-text">+5% this week</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="stat-card">
+              <div class="stat-icon">
+                <i class="fas fa-tasks"></i>
+              </div>
+              <div class="stat-content">
+                <h3>42</h3>
+                <p>Quizzes Completed</p>
+                <div class="progress-indicator">
+                  <span class="progress-text">12 this month</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="stat-card">
+              <div class="stat-icon">
+                <i class="fas fa-graduation-cap"></i>
+              </div>
+              <div class="stat-content">
+                <h3>5</h3>
+                <p>Topics Mastered</p>
+                <div class="progress-indicator">
+                  <span class="progress-text">3 more to go</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="stat-card">
+              <div class="stat-icon">
+                <i class="fas fa-clock"></i>
+              </div>
+              <div class="stat-content">
+                <h3>8.2</h3>
+                <p>Hours Studied</p>
+                <div class="progress-indicator">
+                  <span class="progress-text">2.1h today</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
 
       <div class="quick-actions">
-        <div class="qa-card">
-          <span>🎯</span>
+        <div class="qa-card study-mode">
+          <div class="qa-icon">
+            <i class="fas fa-brain"></i>
+          </div>
           <h3>Start Study Mode</h3>
           <p>Focus, track time, and study smarter.</p>
+          <div class="qa-badge">New</div>
         </div>
-        <div class="qa-card">
-          <span>🤖</span>
+
+        <div class="qa-card ai-assistant">
+          <div class="qa-icon">
+            <i class="fas fa-robot"></i>
+          </div>
           <h3>Ask CzzleBot</h3>
           <p>Get help from your AI study assistant.</p>
+          <div class="qa-badge">AI</div>
         </div>
-        <div class="qa-card">
-          <span>🧩</span>
+
+        <div class="qa-card quick-quiz">
+          <div class="qa-icon">
+            <i class="fas fa-bolt"></i>
+          </div>
           <h3>Quick Quiz</h3>
           <p>Challenge yourself with random questions.</p>
+          <div class="qa-badge">Popular</div>
         </div>
       </div>
 
@@ -216,9 +301,15 @@
           <p>Your score: <span id="score" class="score-value"></span></p>
         </div>
         <div class="results-actions">
-          <button id="retry-btn">Retry Quiz</button>
-          <button id="review-btn">Review Answers</button>
-          <button id="home-btn">Choose Another Topic</button>
+          <button id="retry-btn" class="action-btn accent">
+            <i class="fas fa-redo"></i> Retry Quiz
+          </button>
+          <button id="review-btn" class="action-btn">
+            <i class="fas fa-eye"></i> Review Answers
+          </button>
+          <button id="home-btn" class="action-btn">
+            <i class="fas fa-home"></i> Choose Another Topic
+          </button>
         </div>
         <div id="review-container" class="review-container hidden"></div>
       </div>
@@ -279,7 +370,7 @@
         </div>
         <div class="chat-box" id="chat-box"></div>
         <div class="chat-input">
-          <input type="text" id="user-input" placeholder="Ask me about Life Sciences..."/>
+          <input type="text" id="user-input" placeholder="Ask me about Life Sciences..." />
           <button id="send-btn">Send</button>
         </div>
       </div>
@@ -293,17 +384,17 @@
       <!-- Footer -->
     </div>
     <footer style="background:#70bb3e;color:#fff;text-align:center;padding:1.5rem 0;margin-top:2rem;">
-        <span>&copy; 2025 BioPrep</span> | <span id="appVersion">Loading version...</span>
+      <span>&copy; 2025 BioPrep</span> | <span id="appVersion">Loading version...</span>
     </footer>
     <script>
-        fetch('version.json')
-            .then(response => response.json())
-            .then(data => {
-                document.getElementById('appVersion').textContent = `Version ${data.version}`;
-            })
-            .catch(() => {
-                document.getElementById('appVersion').textContent = '';
-            });
+      fetch('version.json')
+        .then(response => response.json())
+        .then(data => {
+          document.getElementById('appVersion').textContent = `Version ${data.version}`;
+        })
+        .catch(() => {
+          document.getElementById('appVersion').textContent = '';
+        });
     </script>
 
     <script src="quizData.js"></script>
