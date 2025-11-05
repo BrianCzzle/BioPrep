@@ -309,6 +309,7 @@ function calculateStats() {
       topicsMastered: 0,
       hoursStudied: 0,
       streak: 0,
+      bestStreak: 0, // NEW
     };
 
   let totalScore = 0;
@@ -321,13 +322,43 @@ function calculateStats() {
     if (r.score >= 80) masteredTopics.add(r.topic);
   });
 
+  // --- Best streak logic ---
+  let bestStreak = calcBestStreak(results);
+
   return {
     avgScore: Math.round(totalScore / results.length),
     quizzesCompleted: results.length,
     topicsMastered: masteredTopics.size,
     hoursStudied: totalMinutes.toFixed(1),
     streak: calcStreak(results),
+    bestStreak, // NEW
   };
+}
+
+// --- Helper to calculate best streak ---
+function calcBestStreak(results) {
+  let dates = [...new Set(results.map((r) => r.date))].sort(
+    (a, b) => new Date(a) - new Date(b)
+  );
+  let best = 0,
+    current = 0,
+    prev = null;
+  dates.forEach((dateStr) => {
+    let date = new Date(dateStr);
+    if (prev) {
+      let diff = (date - prev) / 86400000;
+      if (diff === 1) {
+        current++;
+      } else {
+        current = 1;
+      }
+    } else {
+      current = 1;
+    }
+    if (current > best) best = current;
+    prev = date;
+  });
+  return best;
 }
 
 function calcStreak(results) {
@@ -352,6 +383,7 @@ function calcStreak(results) {
 function updateDashboard() {
   const stats = calculateStats();
 
+  // Stats cards
   document.querySelector(".stat-card:nth-child(1) h3").textContent =
     stats.avgScore + "%";
   document.querySelector(".stat-card:nth-child(2) h3").textContent =
@@ -360,8 +392,42 @@ function updateDashboard() {
     stats.topicsMastered;
   document.querySelector(".stat-card:nth-child(4) h3").textContent =
     stats.hoursStudied;
-  document.querySelector(".streak span").textContent =
-    stats.streak + "-day streak";
+
+  // Streak count
+  const streakCount = document.querySelector(".streak-count");
+  if (streakCount) streakCount.textContent = `${stats.streak}-day streak`;
+
+  // Streak bar (progress)
+  const streakFill = document.querySelector(".streak-fill");
+  if (streakFill) {
+    // For example, max streak is 7 days for full bar
+    const percent = Math.min((stats.streak / 7) * 100, 100);
+    streakFill.style.width = percent + "%";
+  }
+
+  // After updating streak UI
+  const bestStreakEl = document.querySelector(".best-streak-count");
+  if (bestStreakEl) bestStreakEl.textContent = `${stats.bestStreak}-day best`;
+}
+
+// Notify streak warning
+function notifyStreakWarning() {
+  const stats = calculateStats();
+  if (stats.streak > 0) {
+    // Check if user has not done a quiz today
+    let results = JSON.parse(localStorage.getItem("quizResults")) || [];
+    let todayStr = new Date().toISOString().split("T")[0];
+    let didQuizToday = results.some((r) => r.date === todayStr);
+    if (!didQuizToday) {
+      Swal.fire({
+        icon: "warning",
+        title: "Don't lose your streak!",
+        text: `Complete a quiz today to keep your ${stats.streak}-day streak.`,
+        timer: 4000,
+        showConfirmButton: false,
+      });
+    }
+  }
 }
 
 // Retry/Reset/Review
@@ -405,6 +471,7 @@ reviewBtn.addEventListener("click", () => {
   }
 });
 updateDashboard();
+notifyStreakWarning();
 
 // Register Service Worker for PWA
 if ("serviceWorker" in navigator) {

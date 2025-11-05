@@ -29,26 +29,30 @@
             <div class="username">Learner!</div>
           </div>
           <!-- Streak and avatar centered below welcome message -->
-          <div class="streak-container"
-            style="display: flex; align-items: center; justify-content: center; margin-top: 1rem;">
-            <div class="streak" style="display: flex; align-items: center;">
-              <div class="streak-icon" style="margin-right: 0.5rem;">
-                <i class="fas fa-fire"></i>
-              </div>
-              <div class="streak-info">
-                <div class="streak-count">3-day streak</div>
-                <div class="streak-progress">
-                  <div class="streak-bar" style="width: 60px; height: 6px; background: #eee; border-radius: 3px;">
-                    <div class="streak-fill" style="width: 60%; height: 100%; background: #ff9800; border-radius: 3px;">
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="user-avatar" style="margin-left: 1rem;">
-              <i class="fas fa-user-graduate"></i>
-            </div>
-          </div>
+          <div class="streak-container">
+  <div class="streak">
+    <div class="streak-icon">
+      <i class="fas fa-fire"></i>
+    </div>
+    <div class="streak-info">
+      <div class="streak-count">3-day streak</div>
+      <div class="streak-progress">
+        <div class="streak-bar">
+          <div class="streak-fill" style="width: 60%"></div>
+          <div class="best-streak-count" style="font-size:0.95em; color:#888; margin-top:2px;">0-day best</div>
+          <div class="streak-info">
+  <div class="streak-count">3-day streak</div>
+  <div class="best-streak-count">5-day best</div>
+  <!-- ... -->
+</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="user-avatar">
+    <i class="fas fa-user-graduate"></i>
+  </div>
+</div>
         </div>
       </div>
     </header>
@@ -60,9 +64,6 @@
             <div class="welcome-text">
               <h2>Continue Your Learning Journey</h2>
               <p>You're making excellent progress in your Life Sciences studies. Your dedication is paying off!</p>
-            </div>
-            <div class="achievement-badge">
-              <i class="fas fa-trophy"></i>
             </div>
           </div>
 
@@ -130,7 +131,7 @@
           <div class="qa-icon">
             <i class="fas fa-brain"></i>
           </div>
-          <h3>Start Study Mode</h3>
+          <h3>Start Study Mode (coming soon)</h3>
           <p>Focus, track time, and study smarter.</p>
           <div class="qa-badge">New</div>
         </div>
@@ -148,7 +149,7 @@
           <div class="qa-icon">
             <i class="fas fa-bolt"></i>
           </div>
-          <h3>Quick Quiz</h3>
+          <h3>Quick Quiz (coming soon)</h3>
           <p>Challenge yourself with random questions.</p>
           <div class="qa-badge">Popular</div>
         </div>
@@ -383,7 +384,7 @@
 
       <!-- Footer -->
     </div>
-    <footer style="background:#70bb3e;color:#fff;text-align:center;padding:1.5rem 0;margin-top:2rem;">
+    <footer>
       <span>&copy; 2025 BioPrep</span> | <span id="appVersion">Loading version...</span>
     </footer>
     <script>

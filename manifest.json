@@ -1,6 +1,6 @@
 {
   "name": "Life Sciences Study App",
-  "short_name": "BioPrepp",
+  "short_name": "BioPrep",
   "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#ffffff",
