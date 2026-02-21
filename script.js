@@ -167,6 +167,17 @@ function shuffleArray(array) {
   return array;
 }
 
+
+// --- Sound effects using CDN URLs ---
+function playSound(type) {
+  const audio = new Audio(
+    type === "success"
+      ? "https://cdn.pixabay.com/download/audio/2021/08/04/audio_8fefc89a09.mp3?filename=notification-736.mp3"
+      : "https://cdn.pixabay.com/download/audio/2021/08/04/audio_4904c24d42.mp3?filename=error-39.mp3"
+  );
+  audio.play();
+}
+
 class Quiz {
   constructor(questions, timeLimit) {
     this.questions = questions;
@@ -223,6 +234,7 @@ class Quiz {
 
     if (isCorrect) {
       this.score++;
+      playSound("success");
       Swal.fire({
         icon: "success",
         title: "Correct!",
@@ -231,6 +243,7 @@ class Quiz {
         showConfirmButton: false,
       });
     } else {
+      playSound("error");
       Swal.fire({
         icon: "error",
         title: "Incorrect",
