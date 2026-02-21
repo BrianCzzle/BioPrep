@@ -168,15 +168,9 @@ function shuffleArray(array) {
 }
 
 
-// --- Sound effects using CDN URLs ---
-function playSound(type) {
-  const audio = new Audio(
-    type === "success"
-      ? "https://cdn.pixabay.com/download/audio/2021/08/04/audio_8fefc89a09.mp3?filename=notification-736.mp3"
-      : "https://cdn.pixabay.com/download/audio/2021/08/04/audio_4904c24d42.mp3?filename=error-39.mp3"
-  );
-  audio.play();
-}
+// --- Sound effects ---
+const correctSound = new Audio('assets/sounds/correct.mp3');
+const wrongSound = new Audio('assets/sounds/wrong.mp3');
 
 class Quiz {
   constructor(questions, timeLimit) {
@@ -234,7 +228,8 @@ class Quiz {
 
     if (isCorrect) {
       this.score++;
-      playSound("success");
+      correctSound.currentTime = 0;
+      correctSound.play();
       Swal.fire({
         icon: "success",
         title: "Correct!",
@@ -243,7 +238,8 @@ class Quiz {
         showConfirmButton: false,
       });
     } else {
-      playSound("error");
+      wrongSound.currentTime = 0;
+      wrongSound.play();
       Swal.fire({
         icon: "error",
         title: "Incorrect",
